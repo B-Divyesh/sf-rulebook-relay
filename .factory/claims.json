@@ -1,0 +1,79 @@
+[
+  {
+    "id": "daily-solvable",
+    "claim": "Every daily puzzle is solver-checked below the 40-move limit.",
+    "where": "game seed label, README",
+    "test": "npm run test:unit -- --run -t '@claim:daily-solvable'",
+    "sandbox": "Generate 42 consecutive UTC seeds across seven full rule cycles; solve each through the production transition function and assert its verified length is below 40."
+  },
+  {
+    "id": "seed-repeat",
+    "claim": "The same UTC date recreates the same board and rule card.",
+    "where": "README",
+    "test": "npm run test:unit -- --run -t '@claim:seed-repeat'",
+    "sandbox": "Generate the same dated puzzle twice from clean state and compare the complete puzzle definitions."
+  },
+  {
+    "id": "complete-run",
+    "claim": "A sample run can be played through to a win screen.",
+    "where": "game goal, README",
+    "test": "npm run test:claim -- --grep '@claim:complete-run'",
+    "sandbox": "Fresh browser context at /demo; use only visible courier and arrow controls for every remaining solver move; assert the focused win dialog and save a screenshot."
+  },
+  {
+    "id": "restart-reset",
+    "claim": "Restart puzzle restores all courier positions and the move count.",
+    "where": "end screen, README",
+    "test": "npm run test:claim -- --grep '@claim:restart-reset'",
+    "sandbox": "Fresh /demo run played to the win screen; press Restart puzzle and assert move zero plus all three original courier locations."
+  },
+  {
+    "id": "loss-screen",
+    "claim": "A run that reaches 40 accepted moves ends on a loss screen.",
+    "where": "game instructions, README",
+    "test": "npm run test:claim -- --grep '@claim:loss-screen'",
+    "sandbox": "Fresh /demo run; make 32 valid visible moves after the eight sample moves and assert the real loss dialog at move 40."
+  },
+  {
+    "id": "input-controls",
+    "claim": "The game supports keyboard arrows, swipe, and on-screen direction controls.",
+    "where": "How it works, README",
+    "test": "npm run test:claim -- --grep '@claim:input-controls'",
+    "sandbox": "Fresh /demo run; execute one solver move by keyboard, one by pointer swipe, and one with an on-screen direction button; assert each state change."
+  },
+  {
+    "id": "settings-persist",
+    "claim": "Sound and reduced-motion settings stay set after reload.",
+    "where": "settings page, README",
+    "test": "npm run test:claim -- --grep '@claim:settings-persist'",
+    "sandbox": "Enter settings from /demo, change both controls, reload, and assert the saved states in the isolated demo namespace."
+  },
+  {
+    "id": "demo-isolation",
+    "claim": "Sample play never changes saved daily progress.",
+    "where": "demo banner, privacy page, README",
+    "test": "npm run test:claim -- --grep '@claim:demo-isolation'",
+    "sandbox": "Place sentinel daily data in localStorage, use and reset /demo, then assert both real keys remain byte-for-byte unchanged."
+  },
+  {
+    "id": "local-only",
+    "claim": "Play is free without an account, and game progress stays in this browser.",
+    "where": "landing facts, privacy page, terms page, README",
+    "test": "npm run test:claim -- --grep '@claim:local-only'",
+    "sandbox": "Record all requests during sample play, assert only the product origin is contacted, and assert the changed game is present in localStorage."
+  },
+  {
+    "id": "offline-reload",
+    "claim": "The game reloads offline after the first visit.",
+    "where": "landing facts, README",
+    "test": "npm run test:claim -- --grep '@claim:offline-reload'",
+    "sandbox": "Use a dedicated fresh browser context, load /demo until its service worker controls the page, go offline, reload, and operate the rule example."
+  },
+  {
+    "id": "frame-rate",
+    "claim": "The board loop stays above 50 fps in the mobile browser test with four-times CPU slowdown.",
+    "where": "README",
+    "test": "npm run test:claim -- --grep '@claim:frame-rate'",
+    "sandbox": "Fresh 390×844 mobile context with Chromium CPU throttled 4×; measure the production requestAnimationFrame loop for two seconds and require at least 50 fps."
+  }
+]

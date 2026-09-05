@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Rulebook Relay route mark">
+  <rect width="64" height="64" rx="13" fill="#f4eedc"/>
+  <path d="M11 16h24a10 10 0 0 1 10 10v4" fill="none" stroke="#17252a" stroke-width="6" stroke-linecap="round"/>
+  <path d="m38 24 8 8 8-8" fill="none" stroke="#c34a36" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="14" cy="47" r="8" fill="#087e78" stroke="#17252a" stroke-width="4"/>
+  <circle cx="46" cy="47" r="8" fill="#d7951b" stroke="#17252a" stroke-width="4"/>
+  <path d="M22 47h16" stroke="#17252a" stroke-width="5" stroke-dasharray="4 4"/>
+</svg>

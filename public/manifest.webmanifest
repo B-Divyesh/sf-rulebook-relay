@@ -1,0 +1,16 @@
+{
+  "name": "Rulebook Relay",
+  "short_name": "Rulebook",
+  "description": "A daily 6×6 courier puzzle with one changing rule card.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4eedc",
+  "theme_color": "#f4eedc",
+  "icons": [
+    {
+      "src": "/icons/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

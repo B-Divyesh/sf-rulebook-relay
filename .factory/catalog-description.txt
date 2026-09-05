@@ -1,0 +1,1 @@
+Move three couriers across a daily 6×6 board while one rule changes each day.
