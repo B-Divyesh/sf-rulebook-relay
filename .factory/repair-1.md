@@ -5,7 +5,8 @@
 **PASS.** The strict-review finding is fixed. There are no remaining product
 findings and no untested public claims.
 
-- Implementation: `50e991e5ec9a4a15f2ec8aee91cf18d0d9adb279`
+- Implementation: `50e991e6c557540b072cc0f19dbf6568e5d6d24f`
+- Verification documentation and evidence: `5c1a8f1b696279ee1b8609ab4b166bb0bb004165`
 - Live URL: `https://rulebook-relay.sociobot.in`
 - Date: 5 September 2026 UTC
 

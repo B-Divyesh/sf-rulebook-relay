@@ -120,8 +120,10 @@ short-phone first-screen layout is repaired and reverified.
 
 The short-phone layout is now repaired and the strict-review finding is
 closed. Implementation SHA
-`50e991e5ec9a4a15f2ec8aee91cf18d0d9adb279` is the deployed product build;
-later report commits contain documentation and evidence only.
+`50e991e6c557540b072cc0f19dbf6568e5d6d24f` is the deployed product build.
+Verification documentation and evidence are recorded in
+`5c1a8f1b696279ee1b8609ab4b166bb0bb004165`; later report commits contain
+documentation only.
 
 On a fresh 390 × 664 phone, the home board begins at 571.02 px and the
 populated sample board begins at 586.91 px. Both leave at least 64 px of the
