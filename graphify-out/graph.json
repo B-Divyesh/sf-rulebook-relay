@@ -903,7 +903,7 @@
       "file_type": "code",
       "norm_label": "simplepuzzle()",
       "source_file": "tests/game.test.ts",
-      "source_location": "L16"
+      "source_location": "L17"
     },
     {
       "id": "src_main",
@@ -2858,7 +2858,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "tests/game.test.ts",
-      "source_location": "L21",
+      "source_location": "L22",
       "weight": 1.0
     },
     {
@@ -3464,6 +3464,18 @@
     {
       "source": "tests_game_test",
       "target": "src_game_puzzle",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "tests/game.test.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_game_test",
+      "target": "src_game_rulefordate",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -4730,7 +4742,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "tests/game.test.ts",
-      "source_location": "L16",
+      "source_location": "L17",
       "weight": 1.0
     },
     {
@@ -5028,5 +5040,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "7da5e30681b3ea521171b16bf1e3d5b883dfcef4"
+  "built_at_commit": "80f28057655e07ccacb56b6373d139ffcb1bbc70"
 }
