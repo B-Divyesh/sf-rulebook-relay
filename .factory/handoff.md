@@ -115,3 +115,35 @@ claim commands, the clean `npm test` suite (8 unit and 15 browser tests), the
 build, and the live 15-browser-test suite passed; no public claim is untested.
 See `.factory/review-1.md`. The current review verdict is **FAIL** until the
 short-phone first-screen layout is repaired and reverified.
+
+## Repair 1 — current status
+
+The short-phone layout is now repaired and the strict-review finding is
+closed. Implementation SHA
+`50e991e5ec9a4a15f2ec8aee91cf18d0d9adb279` is the deployed product build;
+later report commits contain documentation and evidence only.
+
+On a fresh 390 × 664 phone, the home board begins at 571.02 px and the
+populated sample board begins at 586.91 px. Both leave at least 64 px of the
+playable board in the first viewport. The compact sample banner retains its
+exact label, **Reset demo**, and **Start for real**; at 200% text it wraps
+without horizontal overflow.
+
+The repair adds an outcome-based browser regression that visits both `/` and
+`/demo` in a fresh 390 × 664 context. It verifies the job, first action, real
+sample state, and board geometry. All 11 declared claim commands passed again
+individually after `npm ci`; `npm test` passed 8 unit tests and 15 browser
+tests; and `npm run build` produced `dist/`.
+
+After deploying, the full live 15-browser-test suite passed. Fresh desktop and
+phone views state the job, audience, and first action before scrolling. The
+live URL verifier reported HTTPS 200, no console errors, valid basic semantic
+structure, and image/button labels. Playwright Axe found no serious or
+critical issues. Live Lighthouse on `/demo` scored 91 performance, 100
+accessibility, 100 best practices, and 100 SEO (LCP 1.04 s, CLS 0).
+
+See `.factory/repair-1.md` and `.factory/evidence/repair-1/` for the full
+finding disposition and machine evidence. No product function remains known
+to be incomplete. The return-rate target remains unmeasured because the game
+does not collect analytics or identity; any future study must be explicit
+opt-in.
