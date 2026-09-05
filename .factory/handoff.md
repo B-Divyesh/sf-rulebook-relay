@@ -169,3 +169,43 @@ especially on the 404 page. The 404 header and footer also omit required
 shared navigation, factory attribution, and version/build content. No product
 code was changed during verification. See `.factory/verification-2.md` and
 `.factory/evidence/verification-2/`.
+
+## Repair 2 — current status
+
+All four independent-verification-2 findings are closed. Implementation SHA
+`1a28a7985130c2b80d3e66bace716cc2c89e3b33` is deployed to the live product.
+The final documentation/evidence commit is reported separately in the operator
+response.
+
+The unmeasurable 3–8 minute README promise was removed. The README now states
+the solver-verifiable 18–32 move session size, and the expanded
+`daily-solvable` claim checks both limits across 42 dates. A new `rule-cycle`
+claim proves the exact six-day order and a movement outcome for each mutation.
+
+Every app and static-404 navigation target now measures at least 44 × 44 CSS
+px. The static 404 also contains Settings, footer Privacy and Terms links,
+Param Factory attribution, the original-art note, and version content. A fresh
+390 × 664 browser regression measures every visible link and button on all
+routes and the actual static 404.
+
+From a clean clone, all 12 claim commands passed individually. `npm test`
+passed 9 unit tests and 16 browser tests, and `npm run build` created `dist/`.
+The production bundle is 30.55 KB JavaScript and 16.21 KB CSS raw.
+
+After deployment, all 16 browser checks passed again against HTTPS. The URL
+verifier found no console or structural errors. Axe CLI found zero violations
+on six live routes. Lighthouse scored 92 performance and 100 for accessibility,
+best practices, and SEO, with 1.2 s LCP and zero CLS. The throttled mobile loop
+measured 60.006 fps. A missing route returns the designed page with HTTP 404,
+the expected security headers remain present, and the live root exactly matches
+the implementation build.
+
+Fresh desktop and 390 × 664 phone sessions show the job, audience, first action,
+and board before scrolling. The sample opens at 8 / 40 moves with its persistent
+sample label. The full visible-control run reaches the real win dialog; its
+trace and end-screen image are in `.factory/evidence/repair-2/live/`.
+
+See `.factory/repair-2.md` for the complete current and earlier finding
+disposition. No product function is knowingly incomplete. The only remaining
+measurement gap is the brief’s return-rate target, which requires an explicit
+opt-in study because this release has no analytics or identity.

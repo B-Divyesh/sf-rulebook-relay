@@ -48,6 +48,19 @@ word. No sentence exceeds 22 words. No banned marketing word appears.
 | One-way tiles restrict entry. | 4 |
 | Wind tiles then push a courier one extra square. | 9 |
 
+## Missing page and repaired README claims
+
+| Copy | Words |
+| --- | ---: |
+| Return to today’s courier puzzle | 5 |
+| This page does not exist. Your saved game is still in this browser. | 13 |
+| Play today’s puzzle | 3 |
+| Rulebook Relay is a free daily courier puzzle. | 8 |
+| Original scene generated for this game. | 6 |
+| Version 1.0.0. | 2 |
+| Each daily route has a verified 18–32 move solution. | 9 |
+| Its verified route uses 18–32 moves and stays below the 40-move limit. | 12 |
+
 ## Terminology
 
 | Concept | One term |
