@@ -1,0 +1,303 @@
+{
+  "communities": {
+    "0": [
+      "src_game_utcdatestring",
+      "src_main",
+      "src_main_applymotionsetting",
+      "src_main_approot",
+      "src_main_beep",
+      "src_main_bindpageevents",
+      "src_main_clearprefix",
+      "src_main_default_settings",
+      "src_main_enddialogmarkup",
+      "src_main_escapehtml",
+      "src_main_gamekey",
+      "src_main_gamewidgetmarkup",
+      "src_main_getsettings",
+      "src_main_getstats",
+      "src_main_isgamestate",
+      "src_main_issettings",
+      "src_main_loadsession",
+      "src_main_meta",
+      "src_main_performmove",
+      "src_main_prefix",
+      "src_main_recordwin",
+      "src_main_resetdemo",
+      "src_main_runtime",
+      "src_main_safeparse",
+      "src_main_savegame",
+      "src_main_savesettings",
+      "src_main_settings",
+      "src_main_shownetworkstatus",
+      "src_main_stats",
+      "src_main_window"
+    ],
+    "1": [
+      "axe_core_playwright",
+      "package",
+      "package_devdependencies",
+      "package_devdependencies_axe_core_playwright",
+      "package_devdependencies_playwright_test",
+      "package_devdependencies_typescript",
+      "package_devdependencies_vite",
+      "package_devdependencies_vitest",
+      "package_name",
+      "package_private",
+      "package_scripts",
+      "package_scripts_build",
+      "package_scripts_dev",
+      "package_scripts_preview",
+      "package_scripts_test",
+      "package_scripts_test_claim",
+      "package_scripts_test_e2e",
+      "package_scripts_test_unit",
+      "package_type",
+      "package_version",
+      "playwright_test",
+      "typescript",
+      "vite",
+      "vitest"
+    ],
+    "2": [
+      "ref_dom",
+      "ref_dom_iterable",
+      "ref_es2022",
+      "ref_playwright_config_ts",
+      "ref_src",
+      "ref_tests",
+      "ref_vite_config_ts",
+      "tsconfig",
+      "tsconfig_compileroptions",
+      "tsconfig_compileroptions_allowimportingtsextensions",
+      "tsconfig_compileroptions_isolatedmodules",
+      "tsconfig_compileroptions_lib",
+      "tsconfig_compileroptions_module",
+      "tsconfig_compileroptions_moduledetection",
+      "tsconfig_compileroptions_moduleresolution",
+      "tsconfig_compileroptions_noemit",
+      "tsconfig_compileroptions_nounusedlocals",
+      "tsconfig_compileroptions_nounusedparameters",
+      "tsconfig_compileroptions_skiplibcheck",
+      "tsconfig_compileroptions_strict",
+      "tsconfig_compileroptions_target",
+      "tsconfig_compileroptions_usedefineforclassfields",
+      "tsconfig_include"
+    ],
+    "3": [
+      "src_game",
+      "src_game_board_size",
+      "src_game_candidatepuzzle",
+      "src_game_datetodaynumber",
+      "src_game_direction",
+      "src_game_gamestatus",
+      "src_game_generatepuzzle",
+      "src_game_hashseed",
+      "src_game_moveresult",
+      "src_game_mulberry32",
+      "src_game_offsets",
+      "src_game_opposite",
+      "src_game_rulefordate",
+      "src_game_rules",
+      "src_game_sample",
+      "src_game_shuffled"
+    ],
+    "4": [
+      "src_game_createinitialstate",
+      "src_game_move",
+      "src_game_undomove",
+      "src_main_bindgameevents",
+      "src_main_gameruntime",
+      "src_main_gameruntime_constructor",
+      "src_main_gameruntime_enqueue",
+      "src_main_gameruntime_frame",
+      "src_main_gameruntime_setpaused",
+      "src_main_handleboardkey",
+      "src_main_rendergamewidget",
+      "src_main_restartgame",
+      "src_main_selectcourier",
+      "src_main_togglepause"
+    ],
+    "5": [
+      "src_game_attemptmove",
+      "src_game_couriers",
+      "src_game_createdemostate",
+      "src_game_directions",
+      "src_game_findsolution",
+      "src_game_gamestate",
+      "src_game_iswon",
+      "src_game_statekey",
+      "tests_e2e_game_spec",
+      "tests_e2e_game_spec_losspath",
+      "tests_e2e_game_spec_mutedemo",
+      "tests_e2e_game_spec_playmoves"
+    ],
+    "6": [
+      "src_main_demobannermarkup",
+      "src_main_factsmarkup",
+      "src_main_footermarkup",
+      "src_main_gamepagemarkup",
+      "src_main_headermarkup",
+      "src_main_notfoundmarkup",
+      "src_main_privacymarkup",
+      "src_main_renderapp",
+      "src_main_settingsmarkup",
+      "src_main_termsmarkup",
+      "src_main_updatemetadata"
+    ],
+    "7": [
+      "src_game_canenter",
+      "src_game_courierat",
+      "src_game_fromcell",
+      "src_game_goalat",
+      "src_game_movecourier",
+      "src_game_nextcell",
+      "src_main_cellmarkup"
+    ],
+    "8": [
+      "src_game_demo_date",
+      "src_game_move_limit",
+      "src_game_puzzle",
+      "src_game_rulekind",
+      "src_game_tocell",
+      "tests_game_test",
+      "tests_game_test_simplepuzzle"
+    ],
+    "9": [
+      "public_sw",
+      "public_sw_shell"
+    ],
+    "10": [
+      "playwright_config"
+    ],
+    "11": [
+      "vite_config"
+    ]
+  },
+  "cohesion": {
+    "0": 0.135632183908046,
+    "1": 0.08333333333333333,
+    "2": 0.08695652173913043,
+    "3": 0.18333333333333332,
+    "4": 0.24175824175824176,
+    "5": 0.24242424242424243,
+    "6": 0.34545454545454546,
+    "7": 0.2857142857142857,
+    "8": 0.3333333333333333,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0
+  },
+  "gods": [
+    {
+      "id": "tsconfig_compileroptions",
+      "label": "compilerOptions",
+      "degree": 14
+    },
+    {
+      "id": "src_main_loadsession",
+      "label": "loadSession()",
+      "degree": 11
+    },
+    {
+      "id": "src_main_renderapp",
+      "label": "renderApp()",
+      "degree": 11
+    },
+    {
+      "id": "src_game_attemptmove",
+      "label": "attemptMove()",
+      "degree": 10
+    },
+    {
+      "id": "src_game_createdemostate",
+      "label": "createDemoState()",
+      "degree": 9
+    },
+    {
+      "id": "src_main_rendergamewidget",
+      "label": "renderGameWidget()",
+      "degree": 9
+    },
+    {
+      "id": "src_main_bindgameevents",
+      "label": "bindGameEvents()",
+      "degree": 9
+    },
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "degree": 8
+    },
+    {
+      "id": "src_game_findsolution",
+      "label": "findSolution()",
+      "degree": 8
+    },
+    {
+      "id": "src_game_candidatepuzzle",
+      "label": "candidatePuzzle()",
+      "degree": 8
+    }
+  ],
+  "surprises": [
+    {
+      "source": "simplePuzzle()",
+      "target": "toCell()",
+      "source_files": [
+        "tests/game.test.ts",
+        "src/game.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories; peripheral node `simplePuzzle()` unexpectedly reaches hub `toCell()`"
+    },
+    {
+      "source": "lossPath()",
+      "target": "attemptMove()",
+      "source_files": [
+        "tests/e2e/game.spec.ts",
+        "src/game.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories; peripheral node `lossPath()` unexpectedly reaches hub `attemptMove()`"
+    },
+    {
+      "source": "gameWidgetMarkup()",
+      "target": "fromCell()",
+      "source_files": [
+        "src/main.ts",
+        "src/game.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "loadSession()",
+      "target": "createInitialState()",
+      "source_files": [
+        "src/main.ts",
+        "src/game.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "performMove()",
+      "target": "attemptMove()",
+      "source_files": [
+        "src/main.ts",
+        "src/game.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}
