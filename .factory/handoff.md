@@ -93,3 +93,12 @@ measure cannot be observed automatically because this release deliberately has
 no analytics or identity. A future study should use explicit opt-in research,
 not silent tracking. Paid archives, social gates, multiplayer, and AI were not
 added because they are outside this first release.
+
+## Independent verification 1
+
+On 5 September 2026 UTC, an independent verifier reviewed implementation
+`55d8ffcbb52d12cce4bf41c757507ab4fe1a695b` and documentation
+`6d5394c4db573c011f62de679e05013671d8287a`. The verdict is **PASS** with zero
+findings and zero untested claims. See `.factory/verification-1.md` for the
+complete clean-checkout, live desktop/mobile, accessibility, privacy, route,
+and prior-finding disposition evidence.
