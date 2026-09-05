@@ -209,3 +209,27 @@ See `.factory/repair-2.md` for the complete current and earlier finding
 disposition. No product function is knowingly incomplete. The only remaining
 measurement gap is the brief’s return-rate target, which requires an explicit
 opt-in study because this release has no analytics or identity.
+
+## Independent verification 3
+
+On 5 September 2026 UTC, fresh independent QA reviewed implementation
+`1a28a7985130c2b80d3e66bace716cc2c89e3b33` and repair documentation
+`40afbc0393d0d5da037682d187ce5b22d6a8c4e4`. The later `80f2805` wrapper
+changes Graphify output only and does not require a new product image.
+
+The verdict is **PASS** with zero findings and zero untested public claims.
+All 12 exact claim commands passed separately. The clean aggregate suite
+passed 9 unit and 16 browser tests, the build created `dist/`, and the same 16
+browser tests passed against live HTTPS.
+
+Fresh desktop and 390 × 664 phone sessions showed the job, audience, sample
+action, and playable board before scrolling. A recorded sample run reached the
+real 18-move win screen and restarted to zero; the live loss path ended at 40
+moves. Demo reset and exit preserved real data, accessibility scans found zero
+violations, offline reload worked, and the throttled loop measured 60.003 fps.
+Three live Lighthouse runs had a performance median of 94 and scored 100 for
+accessibility, best practices, and SEO.
+
+See `.factory/verification-3.md` and
+`.factory/evidence/verification-3/` for the complete evidence and earlier
+finding disposition.
