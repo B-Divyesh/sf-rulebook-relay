@@ -1,10 +1,10 @@
 [
   {
     "id": "daily-solvable",
-    "claim": "Every daily puzzle is solver-checked below the 40-move limit.",
+    "claim": "Every daily puzzle has a solver-checked route of 18–32 moves, below the 40-move limit.",
     "where": "game seed label, README",
     "test": "npm run test:unit -- --run -t '@claim:daily-solvable'",
-    "sandbox": "Generate 42 consecutive UTC seeds across seven full rule cycles; solve each through the production transition function and assert its verified length is below 40."
+    "sandbox": "Generate 42 consecutive UTC seeds across seven full rule cycles; solve each through the production transition function and assert its verified length is 18–32 moves and below 40."
   },
   {
     "id": "seed-repeat",
@@ -12,6 +12,13 @@
     "where": "README",
     "test": "npm run test:unit -- --run -t '@claim:seed-repeat'",
     "sandbox": "Generate the same dated puzzle twice from clean state and compare the complete puzzle definitions."
+  },
+  {
+    "id": "rule-cycle",
+    "claim": "The six-day cycle uses tailwind, one-way tiles, ice, relay order, echo movement, then a wind and one-way remix.",
+    "where": "README",
+    "test": "npm run test:unit -- --run -t '@claim:rule-cycle'",
+    "sandbox": "Generate six consecutive dated puzzles from a tailwind day, assert the complete rule order, then exercise the production movement outcome for every rule including both remix effects."
   },
   {
     "id": "complete-run",

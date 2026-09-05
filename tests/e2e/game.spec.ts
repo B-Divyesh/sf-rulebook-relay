@@ -269,9 +269,57 @@ test('desktop routes have unique titles, one h1, landmarks, and no serious axe f
     await expect(page).toHaveTitle(title);
     await expect(page.locator('h1')).toHaveCount(1);
     await expect(page.locator('main')).toHaveCount(1);
+    await expect(page.getByRole('banner').getByRole('link', { name: 'Settings' })).toBeVisible();
+    await expect(page.getByRole('contentinfo').getByRole('link', { name: /Built by Param Factory/ })).toBeVisible();
+    await expect(page.getByRole('contentinfo')).toContainText(/Version \d+\.\d+\.\d+\./);
     const results = await new AxeBuilder({ page: page as never }).analyze();
     const serious = results.violations.filter((violation) => ['serious', 'critical'].includes(violation.impact ?? ''));
     expect(serious, `${route}: ${serious.map((item) => item.id).join(', ')}`).toEqual([]);
+  }
+});
+
+test('mobile routes and the static 404 provide complete navigation with 44 px targets', async ({ browser }) => {
+  const context = await browser.newContext({
+    viewport: { width: 390, height: 664 },
+    isMobile: true,
+    serviceWorkers: 'block',
+  });
+  const page = await context.newPage();
+  try {
+    for (const route of ['/', '/demo', '/settings', '/privacy', '/terms', '/404.html']) {
+      await page.goto(`${E2E_BASE_URL}${route}`);
+      const header = page.getByRole('banner');
+      await expect(header.getByRole('link', { name: 'Rulebook Relay' })).toBeVisible();
+      await expect(header.getByRole('link', { name: 'Demo', exact: true })).toBeVisible();
+      await expect(header.getByRole('link', { name: 'Settings', exact: true })).toBeVisible();
+      await expect(header.getByRole('link', { name: 'Privacy', exact: true })).toBeVisible();
+
+      const footer = page.getByRole('contentinfo');
+      await expect(footer.getByRole('link', { name: 'Terms', exact: true })).toBeVisible();
+      await expect(footer.getByRole('link', { name: /Built by Param Factory/ })).toBeVisible();
+      await expect(footer).toContainText(/Version \d+\.\d+\.\d+\./);
+
+      if (route === '/404.html') {
+        await expect(page).toHaveTitle('Page not found — Rulebook Relay');
+        await expect(page.getByRole('heading', { name: 'Return to today’s courier puzzle' })).toBeVisible();
+        await expect(page.getByRole('link', { name: 'Play today’s puzzle' })).toBeVisible();
+      }
+
+      const undersized = await page.locator('a, button').evaluateAll((elements) => elements.flatMap((element) => {
+        const style = getComputedStyle(element);
+        const box = element.getBoundingClientRect();
+        const visible = style.display !== 'none' && style.visibility !== 'hidden' && box.width > 0 && box.height > 0;
+        if (!visible || (box.width >= 43.99 && box.height >= 43.99)) return [];
+        return [{
+          name: element.getAttribute('aria-label') ?? element.textContent?.trim().replace(/\s+/g, ' ') ?? '',
+          width: Number(box.width.toFixed(2)),
+          height: Number(box.height.toFixed(2)),
+        }];
+      }));
+      expect(undersized, `${route} has undersized targets`).toEqual([]);
+    }
+  } finally {
+    await context.close();
   }
 });
 

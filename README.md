@@ -2,8 +2,8 @@
 
 Move three couriers across a daily 6×6 board before the 40-move limit. It is a
 free, one-player browser puzzle for daily-game players who want a changing rule
-without another word grid. Plan for a 3–8 minute run. The game supports touch,
-swipe, keyboard arrows, and on-screen controls.
+without another word grid. Each daily route has a verified 18–32 move solution.
+The game supports touch, swipe, keyboard arrows, and on-screen controls.
 
 Play the isolated sample at `/demo`. It starts eight moves into a real,
 solver-checked route. Sample play uses separate browser storage and never
@@ -16,10 +16,10 @@ matching goal before move 40. One rule card changes each UTC day across a
 six-day cycle: tailwind, one-way tiles, ice, relay order, echo movement, then a
 wind and one-way remix. The shown seed recreates the same puzzle.
 
-Every generated daily puzzle is checked by the production solver below the
-40-move limit. A finished run has a win or loss screen. Restart restores the
-move count and every courier. Sound and reduced-motion settings persist in the
-browser.
+Every generated daily puzzle is checked by the production solver. Its verified
+route uses 18–32 moves and stays below the 40-move limit. A finished run has a
+win or loss screen. Restart restores the move count and every courier. Sound
+and reduced-motion settings persist in the browser.
 
 ## Privacy and offline use
 

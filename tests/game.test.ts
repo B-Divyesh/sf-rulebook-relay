@@ -8,6 +8,7 @@ import {
   findSolution,
   generatePuzzle,
   isWon,
+  ruleForDate,
   toCell,
   type Puzzle,
   type RuleKind,
@@ -29,7 +30,7 @@ function simplePuzzle(rule: RuleKind): Puzzle {
 }
 
 describe('daily puzzle generator', () => {
-  test('@claim:daily-solvable every daily seed is independently solved under 40 moves', () => {
+  test('@claim:daily-solvable every daily seed has a verified 18–32 move route', () => {
     const start = Date.UTC(2026, 0, 1);
     for (let offset = 0; offset < 42; offset += 1) {
       const date = new Date(start + offset * 86_400_000).toISOString().slice(0, 10);
@@ -37,6 +38,8 @@ describe('daily puzzle generator', () => {
       const solution = findSolution(puzzle);
       expect(solution, date).not.toBeNull();
       expect(solution?.length, date).toBe(puzzle.solutionLength);
+      expect(solution?.length, date).toBeGreaterThanOrEqual(18);
+      expect(solution?.length, date).toBeLessThanOrEqual(32);
       expect(solution?.length, date).toBeLessThan(MOVE_LIMIT);
     }
   }, 30_000);
@@ -44,6 +47,45 @@ describe('daily puzzle generator', () => {
   test('@claim:seed-repeat the same UTC date always creates the same board and rule', () => {
     expect(generatePuzzle('2026-09-05')).toEqual(generatePuzzle('2026-09-05'));
   });
+
+  test('@claim:rule-cycle six days use the advertised rules and each changes movement', () => {
+    const dates = ['2026-01-01', '2026-01-02', '2026-01-03', '2026-01-04', '2026-01-05', '2026-01-06'];
+    expect(dates.map(ruleForDate)).toEqual(['tailwind', 'one-way', 'ice', 'relay', 'echo', 'remix']);
+    expect(dates.map((date) => generatePuzzle(date).rule)).toEqual(['tailwind', 'one-way', 'ice', 'relay', 'echo', 'remix']);
+
+    const tailwind = simplePuzzle('tailwind');
+    tailwind.gusts[toCell(1, 0)] = 'right';
+    expect(attemptMove(createInitialState(tailwind), tailwind, { courier: 0, direction: 'right' }).state.positions[0])
+      .toBe(toCell(2, 0));
+
+    const oneWay = simplePuzzle('one-way');
+    oneWay.arrows[toCell(1, 0)] = 'left';
+    expect(attemptMove(createInitialState(oneWay), oneWay, { courier: 0, direction: 'right' }).accepted).toBe(false);
+
+    const ice = simplePuzzle('ice');
+    ice.ice = [toCell(1, 0), toCell(2, 0)];
+    expect(attemptMove(createInitialState(ice), ice, { courier: 0, direction: 'right' }).state.positions[0])
+      .toBe(toCell(3, 0));
+
+    const relay = simplePuzzle('relay');
+    expect(attemptMove(createInitialState(relay), relay, { courier: 1, direction: 'right' }).accepted).toBe(false);
+    const relayMove = attemptMove(createInitialState(relay), relay, { courier: 0, direction: 'right' });
+    expect(relayMove.state.selected).toBe(1);
+
+    const echo = simplePuzzle('echo');
+    const echoState = createInitialState(echo);
+    echoState.positions[1] = toCell(2, 2);
+    expect(attemptMove(echoState, echo, { courier: 0, direction: 'right' }).state.positions)
+      .toEqual([toCell(1, 0), toCell(1, 2), toCell(0, 4)]);
+
+    const remix = simplePuzzle('remix');
+    remix.arrows[toCell(1, 0)] = 'right';
+    remix.gusts[toCell(1, 0)] = 'down';
+    expect(attemptMove(createInitialState(remix), remix, { courier: 0, direction: 'right' }).state.positions[0])
+      .toBe(toCell(1, 1));
+    remix.arrows[toCell(1, 0)] = 'left';
+    expect(attemptMove(createInitialState(remix), remix, { courier: 0, direction: 'right' }).accepted).toBe(false);
+  }, 30_000);
 
   test('sample state is populated and still has a route to the win', () => {
     const puzzle = generatePuzzle(DEMO_DATE);
