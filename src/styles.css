@@ -1087,6 +1087,7 @@ h3 {
 @media (max-width: 520px) {
   .site-header {
     align-items: flex-start;
+    flex-wrap: wrap;
   }
 
   .wordmark span:last-child {
@@ -1095,6 +1096,9 @@ h3 {
   }
 
   .site-header nav {
+    flex: 0 1 auto;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     gap: 8px;
   }
 
@@ -1105,15 +1109,17 @@ h3 {
   .demo-banner {
     align-items: flex-start;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 8px;
   }
 
   .demo-banner strong {
-    max-width: 180px;
+    flex: 1 1 180px;
   }
 
   .demo-actions {
     display: grid;
+    flex: 0 1 auto;
     justify-items: end;
     gap: 0;
   }

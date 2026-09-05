@@ -14,6 +14,11 @@ import {
   type Puzzle,
 } from '../../src/game';
 
+const runtimeEnvironment = (globalThis as {
+  process?: { env?: Record<string, string | undefined> };
+}).process?.env;
+const E2E_BASE_URL = runtimeEnvironment?.PLAYWRIGHT_TEST_BASE_URL ?? 'http://127.0.0.1:4173';
+
 async function muteDemo(page: Page): Promise<void> {
   await page.addInitScript(() => {
     localStorage.setItem('rr:demo:settings', JSON.stringify({ sound: false, reduceMotion: false }));
@@ -107,6 +112,20 @@ test('@claim:demo-isolation sample play and reset never change real progress', a
   expect(realData).toEqual({ proof: 'keep-this-value', settings: JSON.stringify({ sound: true, reduceMotion: false }) });
 });
 
+test('the first action opens a populated sample that can be reset without changing real data', async ({ page }) => {
+  await page.addInitScript(() => localStorage.setItem('rr:real:proof', 'unchanged'));
+  await page.goto('/');
+  await page.getByRole('link', { name: 'Try it with sample data' }).click();
+  await expect(page).toHaveURL(/\/demo$/);
+  await expect(page.getByText('Demo — sample data, nothing is saved')).toBeVisible();
+  await expect(page.locator('.score-strip span').first()).toContainText(`8 / ${MOVE_LIMIT}`);
+  await page.getByRole('button', { name: 'Try the rule' }).click();
+  await expect(page.getByText(/Example complete/)).toBeVisible();
+  await page.getByRole('button', { name: 'Reset demo' }).click();
+  await expect(page.locator('.score-strip span').first()).toContainText(`8 / ${MOVE_LIMIT}`);
+  await expect.poll(() => page.evaluate(() => localStorage.getItem('rr:real:proof'))).toBe('unchanged');
+});
+
 test('@claim:local-only a complete sample interaction contacts only this site', async ({ page }) => {
   const requests: Array<{ method: string; url: string }> = [];
   page.on('request', (request) => requests.push({ method: request.method(), url: request.url() }));
@@ -122,7 +141,7 @@ test('@claim:local-only a complete sample interaction contacts only this site', 
   await playMoves(page, firstMove === undefined ? [] : [firstMove], sample.moves);
   const savedGame = await page.evaluate(() => localStorage.getItem('rr:demo:game'));
   expect(savedGame).toContain(`\"moves\":${sample.moves + 1}`);
-  expect(new Set(requests.map((request) => new URL(request.url).origin))).toEqual(new Set(['http://127.0.0.1:4173']));
+  expect(new Set(requests.map((request) => new URL(request.url).origin))).toEqual(new Set([new URL(E2E_BASE_URL).origin]));
   expect(requests.every((request) => request.method === 'GET')).toBe(true);
   expect(requests.every((request) => /^(\/$|\/demo$|\/settings$|\/privacy$|\/terms$|\/index\.html$|\/sw\.js$|\/manifest\.webmanifest$|\/icons\/|\/assets\/)/.test(new URL(request.url).pathname))).toBe(true);
 });
@@ -132,7 +151,7 @@ test('@claim:offline-reload the sample reloads and remains playable offline', as
   const page = await context.newPage();
   try {
     await muteDemo(page);
-    await page.goto('http://127.0.0.1:4173/demo');
+    await page.goto(`${E2E_BASE_URL}/demo`);
     await page.waitForFunction(() => navigator.serviceWorker.controller !== null);
     await page.waitForFunction(async () => {
       const keys = await caches.keys();
@@ -164,7 +183,7 @@ test('@claim:frame-rate board loop stays above 50 fps with four-times CPU slowdo
   try {
     await session.send('Emulation.setCPUThrottlingRate', { rate: 4 });
     await muteDemo(page);
-    await page.goto('http://127.0.0.1:4173/demo');
+    await page.goto(`${E2E_BASE_URL}/demo`);
     await page.waitForTimeout(2_000);
     const metrics = await page.evaluate(() => {
       const samples = window.rulebookRelayMetrics?.frameTimes.slice(-120) ?? [];
@@ -256,11 +275,43 @@ test('desktop routes have unique titles, one h1, landmarks, and no serious axe f
   }
 });
 
+test('reduced motion makes the rule example update without an animated transition', async ({ browser }) => {
+  const context = await browser.newContext({ reducedMotion: 'reduce' });
+  const page = await context.newPage();
+  try {
+    await page.goto(`${E2E_BASE_URL}/demo`);
+    await page.getByRole('button', { name: 'Try the rule' }).click();
+    const transitionSeconds = await page.locator('.mini-courier').evaluate((element) => {
+      const duration = getComputedStyle(element).transitionDuration;
+      return Number.parseFloat(duration) || 0;
+    });
+    expect(transitionSeconds).toBeLessThanOrEqual(0.01);
+    await expect(page.getByText(/Example complete/)).toBeVisible();
+  } finally {
+    await context.close();
+  }
+});
+
+test('phone layout keeps controls available at 200 percent text size', async ({ browser }) => {
+  const context = await browser.newContext({ viewport: { width: 390, height: 844 }, isMobile: true });
+  const page = await context.newPage();
+  try {
+    await page.goto(`${E2E_BASE_URL}/demo`);
+    await page.evaluate(() => { document.documentElement.style.fontSize = '200%'; });
+    await expect(page.locator('[data-board]')).toBeVisible();
+    await expect(page.getByRole('button', { name: 'Move up' })).toBeVisible();
+    const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+    expect(overflow).toBeLessThanOrEqual(1);
+  } finally {
+    await context.close();
+  }
+});
+
 test('phone first screen states the job, audience, action, facts, and shows the board', async ({ browser }) => {
   const context = await browser.newContext({ viewport: { width: 390, height: 844 }, isMobile: true });
   const page = await context.newPage();
   try {
-    await page.goto('http://127.0.0.1:4173/');
+    await page.goto(`${E2E_BASE_URL}/`);
     await expect(page.getByRole('heading', { name: 'Deliver three couriers before 40 moves' })).toBeVisible();
     await expect(page.getByText(/For daily-puzzle players/)).toBeVisible();
     await expect(page.getByRole('link', { name: 'Try it with sample data' })).toBeVisible();
