@@ -102,3 +102,16 @@ On 5 September 2026 UTC, an independent verifier reviewed implementation
 findings and zero untested claims. See `.factory/verification-1.md` for the
 complete clean-checkout, live desktop/mobile, accessibility, privacy, route,
 and prior-finding disposition evidence.
+
+## Strict review 1
+
+On 5 September 2026 UTC, the strict review of implementation
+`55d8ffcbb52d12cce4bf41c757507ab4fe1a695b` and documentation
+`23cf25c79b164eb9796a0d1132fede0b4b3b9a10` found one high-severity issue.
+At a fresh 390 × 664 phone viewport, the live board begins below the first
+screen on both `/` (705 px) and `/demo` (769 px). The game works after
+scrolling, but this fails the browser-game first-screen requirement. All 11
+claim commands, the clean `npm test` suite (8 unit and 15 browser tests), the
+build, and the live 15-browser-test suite passed; no public claim is untested.
+See `.factory/review-1.md`. The current review verdict is **FAIL** until the
+short-phone first-screen layout is repaired and reverified.
