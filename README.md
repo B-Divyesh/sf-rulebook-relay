@@ -2,7 +2,7 @@
 
 Move three couriers across a daily 6×6 board before the 40-move limit. It is a
 free, one-player browser puzzle for daily-game players who want a changing rule
-without another word grid. A run takes about 3–8 minutes and supports touch,
+without another word grid. Plan for a 3–8 minute run. The game supports touch,
 swipe, keyboard arrows, and on-screen controls.
 
 Play the isolated sample at `/demo`. It starts eight moves into a real,
@@ -58,9 +58,9 @@ Open `http://localhost:4173/demo` for the sample.
 ## Build and deploy
 
 `npm run build` writes the static product to `dist/`. Deploy that directory to
-the product’s static host. `staticwebapp.config.json` supplies SPA fallback,
-the designed 404 response, cache and security behaviour. No database, secrets,
-payment service, or runtime API is used.
+the product’s static host. `staticwebapp.config.json` rewrites the known app
+routes, supplies the designed 404 response, and sets security headers. No
+database, secrets, payment service, or runtime API is used.
 
 ## Project notes
 
