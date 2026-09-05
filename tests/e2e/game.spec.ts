@@ -307,18 +307,29 @@ test('phone layout keeps controls available at 200 percent text size', async ({ 
   }
 });
 
-test('phone first screen states the job, audience, action, facts, and shows the board', async ({ browser }) => {
-  const context = await browser.newContext({ viewport: { width: 390, height: 844 }, isMobile: true });
+test('short phone first screens show a usable board on home and the populated sample', async ({ browser }) => {
+  const viewport = { width: 390, height: 664 };
+  const context = await browser.newContext({ viewport, isMobile: true });
   const page = await context.newPage();
   try {
-    await page.goto(`${E2E_BASE_URL}/`);
-    await expect(page.getByRole('heading', { name: 'Deliver three couriers before 40 moves' })).toBeVisible();
-    await expect(page.getByText(/For daily-puzzle players/)).toBeVisible();
-    await expect(page.getByRole('link', { name: 'Try it with sample data' })).toBeVisible();
-    await expect(page.getByText('Free to play.')).toBeVisible();
-    const boardBox = await page.locator('[data-board]').boundingBox();
-    expect(boardBox).not.toBeNull();
-    expect(boardBox?.y).toBeLessThan(844);
+    for (const [route, heading] of [
+      ['/', 'Deliver three couriers before 40 moves'],
+      ['/demo', 'Finish a sample courier puzzle'],
+    ] as const) {
+      await page.goto(`${E2E_BASE_URL}${route}`);
+      await expect(page.getByRole('heading', { name: heading })).toBeVisible();
+      await expect(page.getByRole('link', { name: route === '/' ? 'Try it with sample data' : 'Finish the sample' })).toBeVisible();
+      if (route === '/') {
+        await expect(page.getByText(/For daily-puzzle players/)).toBeVisible();
+        await expect(page.getByText('Free to play.')).toBeVisible();
+      } else {
+        await expect(page.getByText('Demo — sample data, nothing is saved')).toBeVisible();
+        await expect(page.locator('.score-strip span').first()).toContainText(`8 / ${MOVE_LIMIT}`);
+      }
+      const boardBox = await page.locator('[data-board]').boundingBox();
+      expect(boardBox).not.toBeNull();
+      expect(boardBox?.y).toBeLessThanOrEqual(viewport.height - 64);
+    }
   } finally {
     await context.close();
   }

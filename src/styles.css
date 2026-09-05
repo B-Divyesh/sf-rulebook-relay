@@ -1107,21 +1107,30 @@ h3 {
   }
 
   .demo-banner {
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 8px;
+    padding: 6px 8px;
   }
 
   .demo-banner strong {
+    min-width: 0;
     flex: 1 1 180px;
+    font-size: 0.66rem;
+    letter-spacing: -0.02em;
   }
 
   .demo-actions {
-    display: grid;
-    flex: 0 1 auto;
-    justify-items: end;
-    gap: 0;
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .demo-actions a,
+  .demo-actions .text-button {
+    font-size: 0.75rem;
   }
 
   .hero-shell {
@@ -1153,15 +1162,15 @@ h3 {
   }
 
   .game-heading-row {
-    order: 1;
-  }
-
-  .score-strip {
     order: 2;
   }
 
-  .play-layout {
+  .score-strip {
     order: 3;
+  }
+
+  .play-layout {
+    order: 1;
   }
 
   .rule-card {
