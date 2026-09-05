@@ -76,7 +76,9 @@ design thesis.
 The live Playwright axe check found no serious or critical issue across `/`,
 `/demo`, `/settings`, `/privacy`, `/terms`, and a missing route. Those routes
 had their expected unique client-side titles, exactly one `h1`, and one
-`main`. A fresh browser reported no console errors on the landing page.
+`main`. The factory `verify-url.sh` also passed against the live root: HTTP
+200 in 781 ms, title present, `lang="en"`, one `h1`, a `main`, zero images
+missing `alt`, zero unnamed buttons, and zero console errors.
 
 The live root sent CSP, HSTS, referrer, content-type, frame, and permissions
 headers. Source inspection found no runtime third-party network endpoint; the
