@@ -1,0 +1,32 @@
+{
+  "slug": "rulebook-relay",
+  "title": "Rulebook Relay",
+  "territory": "games-creative",
+  "user": "Daily-puzzle regulars bored of word clones who want one mobile-friendly browser puzzle with a fresh but learnable rule twist each day.",
+  "evidence": [
+    {
+      "url": "https://hn.algolia.com/api/v1/items/43697590",
+      "date": "2025-04-15",
+      "quote_or_summary": "An Ask HN poster explicitly asks whether there is a daily puzzle where the rules change every day and whether there would be interest."
+    },
+    {
+      "url": "https://lemmy.bestiver.se/post/1175649",
+      "date": "2026-06-18",
+      "quote_or_summary": "A federated repost of Gerrymandle describes a daily puzzle where players redraw electoral districts, showing appetite for a daily format with a non-word core mechanic."
+    }
+  ],
+  "recurrence": "The explicit 'rules change every day' request is reinforced by a current daily game built around a distinctive systemic mechanic rather than another word grid.",
+  "current_workaround": "Maintain a bookmark folder of many daily games, accept repeating mechanics, or play one-off puzzle archives.",
+  "incumbents_and_gap": "Wordle, Connections, Puzzmo, and numerous -dles deliver routine, while daily experimental games can be opaque. There is room for a predictable learning scaffold around rotating rules.",
+  "smallest_useful_product": "A one-screen daily logistics puzzle: slide three couriers across a 6\u00d76 board in under 40 moves while one printed 'rule card' changes (mirrors, shared fuel, one-way bridges, etc.). A 30-second interactive example teaches that day's mutation; a six-day week ends with a remix. Inputs are tap/drag or arrows; each attempt is 3\u20138 minutes. Non-goals: word lists, AI-generated riddles, streak penalties, and social posting gates.",
+  "success_measure": "At least 40% of day-one players return for three distinct rule cards in the first week, while tutorial abandonment remains under 20%.",
+  "artifact_class": "browser-game",
+  "monetization": "free \u2014 a daily link should have zero first-run friction; a one-time archive/supporter unlock may follow only if it does not fragment the daily puzzle.",
+  "constraints": "Every daily seed must be solvable and independently verified; avoid real election content or political targeting despite the cited genre example; cache puzzles and store streaks locally by default.",
+  "est_build_effort": "M",
+  "scale": "small",
+  "why_distinct": "The product is a carefully authored rule-language and teaching pattern, not an automated stream of generic daily puzzles.",
+  "confidence": 4,
+  "state": "RESEARCHED",
+  "research_run": "research-browser-games-0901-204312-1"
+}
