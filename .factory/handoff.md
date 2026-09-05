@@ -149,3 +149,23 @@ finding disposition and machine evidence. No product function remains known
 to be incomplete. The return-rate target remains unmeasured because the game
 does not collect analytics or identity; any future study must be explicit
 opt-in.
+
+## Independent verification 2
+
+On 5 September 2026 UTC, independent verification reviewed implementation
+`50e991e6c557540b072cc0f19dbf6568e5d6d24f`, repair evidence commit
+`5c1a8f1b696279ee1b8609ab4b166bb0bb004165`, corrected repair record
+`c32c51d14b845ba657ea7ad811eff388a5a193df`, and report-only wrapper
+`5bcfea3cc5009ec12fc109762c98dd9ab2906919`.
+
+The repaired 390 × 664 first-screen layout passes on `/` and `/demo`. All 11
+declared claim commands, the clean 8-unit/15-browser test suite, the build,
+and the live 15-browser-test suite passed.
+
+The overall verdict is **FAIL** with four findings and two untested public
+claims. `README.md` has unregistered 3–8 minute and exact six-day rule-cycle
+claims. Mobile navigation includes touch targets below 44 × 44 CSS px,
+especially on the 404 page. The 404 header and footer also omit required
+shared navigation, factory attribution, and version/build content. No product
+code was changed during verification. See `.factory/verification-2.md` and
+`.factory/evidence/verification-2/`.

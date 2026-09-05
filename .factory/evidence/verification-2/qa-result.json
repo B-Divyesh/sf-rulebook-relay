@@ -1,0 +1,8 @@
+{
+  "verdict": "FAIL",
+  "finding_count": 4,
+  "untested_claim_count": 2,
+  "candidate_commit": "50e991e6c557540b072cc0f19dbf6568e5d6d24f",
+  "live_url": "https://rulebook-relay.sociobot.in",
+  "report": ".factory/verification-2.md"
+}
