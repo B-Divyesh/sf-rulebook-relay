@@ -209,8 +209,8 @@
       "degree": 10
     },
     {
-      "id": "src_game_createdemostate",
-      "label": "createDemoState()",
+      "id": "src_main_bindgameevents",
+      "label": "bindGameEvents()",
       "degree": 9
     },
     {
@@ -219,38 +219,27 @@
       "degree": 9
     },
     {
-      "id": "src_main_bindgameevents",
-      "label": "bindGameEvents()",
+      "id": "src_game_createdemostate",
+      "label": "createDemoState()",
       "degree": 9
     },
     {
-      "id": "package_scripts",
-      "label": "scripts",
-      "degree": 8
-    },
-    {
-      "id": "src_game_findsolution",
-      "label": "findSolution()",
+      "id": "src_main_savegame",
+      "label": "saveGame()",
       "degree": 8
     },
     {
       "id": "src_game_candidatepuzzle",
       "label": "candidatePuzzle()",
       "degree": 8
+    },
+    {
+      "id": "src_game_generatepuzzle",
+      "label": "generatePuzzle()",
+      "degree": 8
     }
   ],
   "surprises": [
-    {
-      "source": "simplePuzzle()",
-      "target": "toCell()",
-      "source_files": [
-        "tests/game.test.ts",
-        "src/game.ts"
-      ],
-      "confidence": "EXTRACTED",
-      "relation": "calls",
-      "why": "connects across different repos/directories; peripheral node `simplePuzzle()` unexpectedly reaches hub `toCell()`"
-    },
     {
       "source": "lossPath()",
       "target": "attemptMove()",
@@ -261,6 +250,17 @@
       "confidence": "EXTRACTED",
       "relation": "calls",
       "why": "connects across different repos/directories; peripheral node `lossPath()` unexpectedly reaches hub `attemptMove()`"
+    },
+    {
+      "source": "simplePuzzle()",
+      "target": "toCell()",
+      "source_files": [
+        "tests/game.test.ts",
+        "src/game.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories; peripheral node `simplePuzzle()` unexpectedly reaches hub `toCell()`"
     },
     {
       "source": "gameWidgetMarkup()",
@@ -275,7 +275,7 @@
     },
     {
       "source": "loadSession()",
-      "target": "createInitialState()",
+      "target": "createDemoState()",
       "source_files": [
         "src/main.ts",
         "src/game.ts"
@@ -285,8 +285,8 @@
       "why": "bridges separate communities"
     },
     {
-      "source": "performMove()",
-      "target": "attemptMove()",
+      "source": "loadSession()",
+      "target": "createInitialState()",
       "source_files": [
         "src/main.ts",
         "src/game.ts"
