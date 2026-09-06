@@ -1,35 +1,40 @@
 {
   "communities": {
     "0": [
-      "src_game_utcdatestring",
+      "src_game_courierat",
+      "src_game_fromcell",
+      "src_game_goalat",
       "src_main",
-      "src_main_applymotionsetting",
       "src_main_approot",
       "src_main_beep",
-      "src_main_bindpageevents",
-      "src_main_clearprefix",
+      "src_main_cellmarkup",
       "src_main_default_settings",
+      "src_main_demobannermarkup",
       "src_main_enddialogmarkup",
       "src_main_escapehtml",
-      "src_main_gamekey",
+      "src_main_factsmarkup",
+      "src_main_footermarkup",
+      "src_main_gamepagemarkup",
       "src_main_gamewidgetmarkup",
       "src_main_getsettings",
       "src_main_getstats",
-      "src_main_isgamestate",
+      "src_main_headermarkup",
       "src_main_issettings",
-      "src_main_loadsession",
       "src_main_meta",
+      "src_main_notfoundmarkup",
       "src_main_performmove",
       "src_main_prefix",
+      "src_main_privacymarkup",
       "src_main_recordwin",
-      "src_main_resetdemo",
+      "src_main_renderapp",
       "src_main_runtime",
       "src_main_safeparse",
-      "src_main_savegame",
-      "src_main_savesettings",
       "src_main_settings",
+      "src_main_settingsmarkup",
       "src_main_shownetworkstatus",
       "src_main_stats",
+      "src_main_termsmarkup",
+      "src_main_updatemetadata",
       "src_main_window"
     ],
     "1": [
@@ -90,7 +95,6 @@
       "src_game_datetodaynumber",
       "src_game_direction",
       "src_game_gamestatus",
-      "src_game_generatepuzzle",
       "src_game_hashseed",
       "src_game_moveresult",
       "src_game_mulberry32",
@@ -102,7 +106,6 @@
       "src_game_shuffled"
     ],
     "4": [
-      "src_game_createinitialstate",
       "src_game_move",
       "src_game_undomove",
       "src_main_bindgameevents",
@@ -114,16 +117,17 @@
       "src_main_handleboardkey",
       "src_main_rendergamewidget",
       "src_main_restartgame",
+      "src_main_savegame",
       "src_main_selectcourier",
       "src_main_togglepause"
     ],
     "5": [
       "src_game_attemptmove",
       "src_game_couriers",
-      "src_game_createdemostate",
       "src_game_directions",
       "src_game_findsolution",
       "src_game_gamestate",
+      "src_game_generatepuzzle",
       "src_game_iswon",
       "src_game_statekey",
       "tests_e2e_game_spec",
@@ -132,29 +136,19 @@
       "tests_e2e_game_spec_playmoves"
     ],
     "6": [
-      "src_main_demobannermarkup",
-      "src_main_factsmarkup",
-      "src_main_footermarkup",
-      "src_main_gamepagemarkup",
-      "src_main_headermarkup",
-      "src_main_notfoundmarkup",
-      "src_main_privacymarkup",
-      "src_main_renderapp",
-      "src_main_settingsmarkup",
-      "src_main_termsmarkup",
-      "src_main_updatemetadata"
+      "src_game_utcdatestring",
+      "src_main_applymotionsetting",
+      "src_main_bindpageevents",
+      "src_main_clearprefix",
+      "src_main_gamekey",
+      "src_main_isgamestate",
+      "src_main_loadsession",
+      "src_main_resetdemo",
+      "src_main_savesettings"
     ],
     "7": [
-      "src_game_canenter",
-      "src_game_courierat",
-      "src_game_fromcell",
-      "src_game_goalat",
-      "src_game_movecourier",
-      "src_game_nextcell",
-      "src_main_cellmarkup"
-    ],
-    "8": [
-      "src_game_demo_date",
+      "src_game_createdemostate",
+      "src_game_createinitialstate",
       "src_game_move_limit",
       "src_game_puzzle",
       "src_game_rulekind",
@@ -162,30 +156,44 @@
       "tests_game_test",
       "tests_game_test_simplepuzzle"
     ],
+    "8": [
+      "factory_evidence_review_3_live_review",
+      "factory_evidence_review_3_live_review_check",
+      "factory_evidence_review_3_live_review_evidence",
+      "factory_evidence_review_3_live_review_score",
+      "factory_evidence_review_3_live_review_touchtap",
+      "src_game_demo_date"
+    ],
     "9": [
+      "src_game_canenter",
+      "src_game_movecourier",
+      "src_game_nextcell"
+    ],
+    "10": [
       "public_sw",
       "public_sw_shell"
     ],
-    "10": [
+    "11": [
       "playwright_config"
     ],
-    "11": [
+    "12": [
       "vite_config"
     ]
   },
   "cohesion": {
-    "0": 0.135632183908046,
+    "0": 0.12436974789915967,
     "1": 0.08333333333333333,
     "2": 0.08695652173913043,
-    "3": 0.18333333333333332,
-    "4": 0.24175824175824176,
-    "5": 0.24242424242424243,
-    "6": 0.34545454545454546,
-    "7": 0.2857142857142857,
-    "8": 0.3333333333333333,
-    "9": 1.0,
+    "3": 0.19047619047619047,
+    "4": 0.26373626373626374,
+    "5": 0.22727272727272727,
+    "6": 0.3055555555555556,
+    "7": 0.32142857142857145,
+    "8": 0.4,
+    "9": 0.6666666666666666,
     "10": 1.0,
-    "11": 1.0
+    "11": 1.0,
+    "12": 1.0
   },
   "gods": [
     {
@@ -209,6 +217,16 @@
       "degree": 10
     },
     {
+      "id": "src_game_createdemostate",
+      "label": "createDemoState()",
+      "degree": 10
+    },
+    {
+      "id": "src_game_generatepuzzle",
+      "label": "generatePuzzle()",
+      "degree": 9
+    },
+    {
       "id": "src_main_bindgameevents",
       "label": "bindGameEvents()",
       "degree": 9
@@ -219,23 +237,13 @@
       "degree": 9
     },
     {
-      "id": "src_game_createdemostate",
-      "label": "createDemoState()",
+      "id": "src_game_findsolution",
+      "label": "findSolution()",
       "degree": 9
     },
     {
       "id": "src_main_savegame",
       "label": "saveGame()",
-      "degree": 8
-    },
-    {
-      "id": "src_game_candidatepuzzle",
-      "label": "candidatePuzzle()",
-      "degree": 8
-    },
-    {
-      "id": "src_game_generatepuzzle",
-      "label": "generatePuzzle()",
       "degree": 8
     }
   ],
@@ -263,17 +271,6 @@
       "why": "connects across different repos/directories; peripheral node `simplePuzzle()` unexpectedly reaches hub `toCell()`"
     },
     {
-      "source": "gameWidgetMarkup()",
-      "target": "fromCell()",
-      "source_files": [
-        "src/main.ts",
-        "src/game.ts"
-      ],
-      "confidence": "EXTRACTED",
-      "relation": "calls",
-      "why": "bridges separate communities"
-    },
-    {
       "source": "loadSession()",
       "target": "createDemoState()",
       "source_files": [
@@ -287,6 +284,17 @@
     {
       "source": "loadSession()",
       "target": "createInitialState()",
+      "source_files": [
+        "src/main.ts",
+        "src/game.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "loadSession()",
+      "target": "generatePuzzle()",
       "source_files": [
         "src/main.ts",
         "src/game.ts"

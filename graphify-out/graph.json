@@ -117,7 +117,7 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 8,
+      "community": 7,
       "file_type": "code",
       "norm_label": "puzzle",
       "source_file": "src/game.ts",
@@ -129,33 +129,44 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 8,
+      "community": 7,
       "file_type": "code",
       "norm_label": "rulekind",
       "source_file": "src/game.ts",
       "source_location": "L5"
     },
     {
-      "id": "src_game_utcdatestring",
-      "label": "utcDateString()",
+      "id": "src_game_courierat",
+      "label": "courierAt()",
       "_callable": true,
       "_origin": "ast",
       "community": 0,
       "file_type": "code",
-      "norm_label": "utcdatestring()",
+      "norm_label": "courierat()",
       "source_file": "src/game.ts",
-      "source_location": "L138"
+      "source_location": "L389"
     },
     {
-      "id": "src_main_applymotionsetting",
-      "label": "applyMotionSetting()",
+      "id": "src_game_fromcell",
+      "label": "fromCell()",
       "_callable": true,
       "_origin": "ast",
       "community": 0,
       "file_type": "code",
-      "norm_label": "applymotionsetting()",
-      "source_file": "src/main.ts",
-      "source_location": "L128"
+      "norm_label": "fromcell()",
+      "source_file": "src/game.ts",
+      "source_location": "L130"
+    },
+    {
+      "id": "src_game_goalat",
+      "label": "goalAt()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "code",
+      "norm_label": "goalat()",
+      "source_file": "src/game.ts",
+      "source_location": "L393"
     },
     {
       "id": "src_main_beep",
@@ -169,26 +180,26 @@
       "source_location": "L218"
     },
     {
-      "id": "src_main_bindpageevents",
-      "label": "bindPageEvents()",
+      "id": "src_main_cellmarkup",
+      "label": "cellMarkup()",
       "_callable": true,
       "_origin": "ast",
       "community": 0,
       "file_type": "code",
-      "norm_label": "bindpageevents()",
+      "norm_label": "cellmarkup()",
       "source_file": "src/main.ts",
-      "source_location": "L704"
+      "source_location": "L345"
     },
     {
-      "id": "src_main_clearprefix",
-      "label": "clearPrefix()",
+      "id": "src_main_demobannermarkup",
+      "label": "demoBannerMarkup()",
       "_callable": true,
       "_origin": "ast",
       "community": 0,
       "file_type": "code",
-      "norm_label": "clearprefix()",
+      "norm_label": "demobannermarkup()",
       "source_file": "src/main.ts",
-      "source_location": "L158"
+      "source_location": "L271"
     },
     {
       "id": "src_main_enddialogmarkup",
@@ -213,15 +224,37 @@
       "source_location": "L165"
     },
     {
-      "id": "src_main_gamekey",
-      "label": "gameKey()",
+      "id": "src_main_factsmarkup",
+      "label": "factsMarkup()",
       "_callable": true,
       "_origin": "ast",
       "community": 0,
       "file_type": "code",
-      "norm_label": "gamekey()",
+      "norm_label": "factsmarkup()",
       "source_file": "src/main.ts",
-      "source_location": "L132"
+      "source_location": "L294"
+    },
+    {
+      "id": "src_main_footermarkup",
+      "label": "footerMarkup()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "code",
+      "norm_label": "footermarkup()",
+      "source_file": "src/main.ts",
+      "source_location": "L282"
+    },
+    {
+      "id": "src_main_gamepagemarkup",
+      "label": "gamePageMarkup()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "code",
+      "norm_label": "gamepagemarkup()",
+      "source_file": "src/main.ts",
+      "source_location": "L302"
     },
     {
       "id": "src_main_gamewidgetmarkup",
@@ -257,15 +290,15 @@
       "source_location": "L141"
     },
     {
-      "id": "src_main_isgamestate",
-      "label": "isGameState()",
+      "id": "src_main_headermarkup",
+      "label": "headerMarkup()",
       "_callable": true,
       "_origin": "ast",
       "community": 0,
       "file_type": "code",
-      "norm_label": "isgamestate()",
+      "norm_label": "headermarkup()",
       "source_file": "src/main.ts",
-      "source_location": "L90"
+      "source_location": "L254"
     },
     {
       "id": "src_main_issettings",
@@ -279,15 +312,15 @@
       "source_location": "L109"
     },
     {
-      "id": "src_main_loadsession",
-      "label": "loadSession()",
+      "id": "src_main_notfoundmarkup",
+      "label": "notFoundMarkup()",
       "_callable": true,
       "_origin": "ast",
       "community": 0,
       "file_type": "code",
-      "norm_label": "loadsession()",
+      "norm_label": "notfoundmarkup()",
       "source_file": "src/main.ts",
-      "source_location": "L237"
+      "source_location": "L527"
     },
     {
       "id": "src_main_performmove",
@@ -312,6 +345,17 @@
       "source_location": "L115"
     },
     {
+      "id": "src_main_privacymarkup",
+      "label": "privacyMarkup()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "code",
+      "norm_label": "privacymarkup()",
+      "source_file": "src/main.ts",
+      "source_location": "L496"
+    },
+    {
       "id": "src_main_recordwin",
       "label": "recordWin()",
       "_callable": true,
@@ -323,15 +367,15 @@
       "source_location": "L150"
     },
     {
-      "id": "src_main_resetdemo",
-      "label": "resetDemo()",
+      "id": "src_main_renderapp",
+      "label": "renderApp()",
       "_callable": true,
       "_origin": "ast",
       "community": 0,
       "file_type": "code",
-      "norm_label": "resetdemo()",
+      "norm_label": "renderapp()",
       "source_file": "src/main.ts",
-      "source_location": "L695"
+      "source_location": "L546"
     },
     {
       "id": "src_main_safeparse",
@@ -345,26 +389,15 @@
       "source_location": "L80"
     },
     {
-      "id": "src_main_savegame",
-      "label": "saveGame()",
+      "id": "src_main_settingsmarkup",
+      "label": "settingsMarkup()",
       "_callable": true,
       "_origin": "ast",
       "community": 0,
       "file_type": "code",
-      "norm_label": "savegame()",
+      "norm_label": "settingsmarkup()",
       "source_file": "src/main.ts",
-      "source_location": "L137"
-    },
-    {
-      "id": "src_main_savesettings",
-      "label": "saveSettings()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "file_type": "code",
-      "norm_label": "savesettings()",
-      "source_file": "src/main.ts",
-      "source_location": "L123"
+      "source_location": "L470"
     },
     {
       "id": "src_main_shownetworkstatus",
@@ -376,6 +409,28 @@
       "norm_label": "shownetworkstatus()",
       "source_file": "src/main.ts",
       "source_location": "L737"
+    },
+    {
+      "id": "src_main_termsmarkup",
+      "label": "termsMarkup()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "code",
+      "norm_label": "termsmarkup()",
+      "source_file": "src/main.ts",
+      "source_location": "L512"
+    },
+    {
+      "id": "src_main_updatemetadata",
+      "label": "updateMetadata()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "code",
+      "norm_label": "updatemetadata()",
+      "source_file": "src/main.ts",
+      "source_location": "L536"
     },
     {
       "id": "src_game_candidatepuzzle",
@@ -398,17 +453,6 @@
       "norm_label": "datetodaynumber()",
       "source_file": "src/game.ts",
       "source_location": "L134"
-    },
-    {
-      "id": "src_game_generatepuzzle",
-      "label": "generatePuzzle()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 3,
-      "file_type": "code",
-      "norm_label": "generatepuzzle()",
-      "source_file": "src/game.ts",
-      "source_location": "L362"
     },
     {
       "id": "src_game_hashseed",
@@ -464,17 +508,6 @@
       "norm_label": "shuffled()",
       "source_file": "src/game.ts",
       "source_location": "L117"
-    },
-    {
-      "id": "src_game_createinitialstate",
-      "label": "createInitialState()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "file_type": "code",
-      "norm_label": "createinitialstate()",
-      "source_file": "src/game.ts",
-      "source_location": "L206"
     },
     {
       "id": "src_game_undomove",
@@ -576,6 +609,17 @@
       "source_location": "L683"
     },
     {
+      "id": "src_main_savegame",
+      "label": "saveGame()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 4,
+      "file_type": "code",
+      "norm_label": "savegame()",
+      "source_file": "src/main.ts",
+      "source_location": "L137"
+    },
+    {
       "id": "src_main_selectcourier",
       "label": "selectCourier()",
       "_callable": true,
@@ -609,17 +653,6 @@
       "source_location": "L217"
     },
     {
-      "id": "src_game_createdemostate",
-      "label": "createDemoState()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "file_type": "code",
-      "norm_label": "createdemostate()",
-      "source_file": "src/game.ts",
-      "source_location": "L375"
-    },
-    {
       "id": "src_game_findsolution",
       "label": "findSolution()",
       "_callable": true,
@@ -629,6 +662,17 @@
       "norm_label": "findsolution()",
       "source_file": "src/game.ts",
       "source_location": "L291"
+    },
+    {
+      "id": "src_game_generatepuzzle",
+      "label": "generatePuzzle()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 5,
+      "file_type": "code",
+      "norm_label": "generatepuzzle()",
+      "source_file": "src/game.ts",
+      "source_location": "L362"
     },
     {
       "id": "src_game_iswon",
@@ -686,209 +730,132 @@
       "source_location": "L28"
     },
     {
-      "id": "src_main_demobannermarkup",
-      "label": "demoBannerMarkup()",
+      "id": "src_game_utcdatestring",
+      "label": "utcDateString()",
       "_callable": true,
       "_origin": "ast",
       "community": 6,
       "file_type": "code",
-      "norm_label": "demobannermarkup()",
-      "source_file": "src/main.ts",
-      "source_location": "L271"
-    },
-    {
-      "id": "src_main_factsmarkup",
-      "label": "factsMarkup()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "file_type": "code",
-      "norm_label": "factsmarkup()",
-      "source_file": "src/main.ts",
-      "source_location": "L294"
-    },
-    {
-      "id": "src_main_footermarkup",
-      "label": "footerMarkup()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "file_type": "code",
-      "norm_label": "footermarkup()",
-      "source_file": "src/main.ts",
-      "source_location": "L282"
-    },
-    {
-      "id": "src_main_gamepagemarkup",
-      "label": "gamePageMarkup()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "file_type": "code",
-      "norm_label": "gamepagemarkup()",
-      "source_file": "src/main.ts",
-      "source_location": "L302"
-    },
-    {
-      "id": "src_main_headermarkup",
-      "label": "headerMarkup()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "file_type": "code",
-      "norm_label": "headermarkup()",
-      "source_file": "src/main.ts",
-      "source_location": "L254"
-    },
-    {
-      "id": "src_main_notfoundmarkup",
-      "label": "notFoundMarkup()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "file_type": "code",
-      "norm_label": "notfoundmarkup()",
-      "source_file": "src/main.ts",
-      "source_location": "L527"
-    },
-    {
-      "id": "src_main_privacymarkup",
-      "label": "privacyMarkup()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "file_type": "code",
-      "norm_label": "privacymarkup()",
-      "source_file": "src/main.ts",
-      "source_location": "L496"
-    },
-    {
-      "id": "src_main_renderapp",
-      "label": "renderApp()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "file_type": "code",
-      "norm_label": "renderapp()",
-      "source_file": "src/main.ts",
-      "source_location": "L546"
-    },
-    {
-      "id": "src_main_settingsmarkup",
-      "label": "settingsMarkup()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "file_type": "code",
-      "norm_label": "settingsmarkup()",
-      "source_file": "src/main.ts",
-      "source_location": "L470"
-    },
-    {
-      "id": "src_main_termsmarkup",
-      "label": "termsMarkup()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "file_type": "code",
-      "norm_label": "termsmarkup()",
-      "source_file": "src/main.ts",
-      "source_location": "L512"
-    },
-    {
-      "id": "src_main_updatemetadata",
-      "label": "updateMetadata()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "file_type": "code",
-      "norm_label": "updatemetadata()",
-      "source_file": "src/main.ts",
-      "source_location": "L536"
-    },
-    {
-      "id": "src_game_canenter",
-      "label": "canEnter()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 7,
-      "file_type": "code",
-      "norm_label": "canenter()",
+      "norm_label": "utcdatestring()",
       "source_file": "src/game.ts",
-      "source_location": "L157"
+      "source_location": "L138"
     },
     {
-      "id": "src_game_courierat",
-      "label": "courierAt()",
+      "id": "src_main_applymotionsetting",
+      "label": "applyMotionSetting()",
       "_callable": true,
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "file_type": "code",
-      "norm_label": "courierat()",
-      "source_file": "src/game.ts",
-      "source_location": "L389"
-    },
-    {
-      "id": "src_game_fromcell",
-      "label": "fromCell()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 7,
-      "file_type": "code",
-      "norm_label": "fromcell()",
-      "source_file": "src/game.ts",
-      "source_location": "L130"
-    },
-    {
-      "id": "src_game_goalat",
-      "label": "goalAt()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 7,
-      "file_type": "code",
-      "norm_label": "goalat()",
-      "source_file": "src/game.ts",
-      "source_location": "L393"
-    },
-    {
-      "id": "src_game_movecourier",
-      "label": "moveCourier()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 7,
-      "file_type": "code",
-      "norm_label": "movecourier()",
-      "source_file": "src/game.ts",
-      "source_location": "L172"
-    },
-    {
-      "id": "src_game_nextcell",
-      "label": "nextCell()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 7,
-      "file_type": "code",
-      "norm_label": "nextcell()",
-      "source_file": "src/game.ts",
-      "source_location": "L148"
-    },
-    {
-      "id": "src_main_cellmarkup",
-      "label": "cellMarkup()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 7,
-      "file_type": "code",
-      "norm_label": "cellmarkup()",
+      "norm_label": "applymotionsetting()",
       "source_file": "src/main.ts",
-      "source_location": "L345"
+      "source_location": "L128"
+    },
+    {
+      "id": "src_main_bindpageevents",
+      "label": "bindPageEvents()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "file_type": "code",
+      "norm_label": "bindpageevents()",
+      "source_file": "src/main.ts",
+      "source_location": "L704"
+    },
+    {
+      "id": "src_main_clearprefix",
+      "label": "clearPrefix()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "file_type": "code",
+      "norm_label": "clearprefix()",
+      "source_file": "src/main.ts",
+      "source_location": "L158"
+    },
+    {
+      "id": "src_main_gamekey",
+      "label": "gameKey()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "file_type": "code",
+      "norm_label": "gamekey()",
+      "source_file": "src/main.ts",
+      "source_location": "L132"
+    },
+    {
+      "id": "src_main_isgamestate",
+      "label": "isGameState()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "file_type": "code",
+      "norm_label": "isgamestate()",
+      "source_file": "src/main.ts",
+      "source_location": "L90"
+    },
+    {
+      "id": "src_main_loadsession",
+      "label": "loadSession()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "file_type": "code",
+      "norm_label": "loadsession()",
+      "source_file": "src/main.ts",
+      "source_location": "L237"
+    },
+    {
+      "id": "src_main_resetdemo",
+      "label": "resetDemo()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "file_type": "code",
+      "norm_label": "resetdemo()",
+      "source_file": "src/main.ts",
+      "source_location": "L695"
+    },
+    {
+      "id": "src_main_savesettings",
+      "label": "saveSettings()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "file_type": "code",
+      "norm_label": "savesettings()",
+      "source_file": "src/main.ts",
+      "source_location": "L123"
+    },
+    {
+      "id": "src_game_createdemostate",
+      "label": "createDemoState()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 7,
+      "file_type": "code",
+      "norm_label": "createdemostate()",
+      "source_file": "src/game.ts",
+      "source_location": "L375"
+    },
+    {
+      "id": "src_game_createinitialstate",
+      "label": "createInitialState()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 7,
+      "file_type": "code",
+      "norm_label": "createinitialstate()",
+      "source_file": "src/game.ts",
+      "source_location": "L206"
     },
     {
       "id": "src_game_tocell",
       "label": "toCell()",
       "_callable": true,
       "_origin": "ast",
-      "community": 8,
+      "community": 7,
       "file_type": "code",
       "norm_label": "tocell()",
       "source_file": "src/game.ts",
@@ -899,11 +866,77 @@
       "label": "simplePuzzle()",
       "_callable": true,
       "_origin": "ast",
-      "community": 8,
+      "community": 7,
       "file_type": "code",
       "norm_label": "simplepuzzle()",
       "source_file": "tests/game.test.ts",
       "source_location": "L17"
+    },
+    {
+      "id": "factory_evidence_review_3_live_review_check",
+      "label": "check()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "file_type": "code",
+      "norm_label": "check()",
+      "source_file": ".factory/evidence/review-3/live-review.mjs",
+      "source_location": "L10"
+    },
+    {
+      "id": "factory_evidence_review_3_live_review_score",
+      "label": "score()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "file_type": "code",
+      "norm_label": "score()",
+      "source_file": ".factory/evidence/review-3/live-review.mjs",
+      "source_location": "L14"
+    },
+    {
+      "id": "factory_evidence_review_3_live_review_touchtap",
+      "label": "touchTap()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "file_type": "code",
+      "norm_label": "touchtap()",
+      "source_file": ".factory/evidence/review-3/live-review.mjs",
+      "source_location": "L18"
+    },
+    {
+      "id": "src_game_canenter",
+      "label": "canEnter()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "file_type": "code",
+      "norm_label": "canenter()",
+      "source_file": "src/game.ts",
+      "source_location": "L157"
+    },
+    {
+      "id": "src_game_movecourier",
+      "label": "moveCourier()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "file_type": "code",
+      "norm_label": "movecourier()",
+      "source_file": "src/game.ts",
+      "source_location": "L172"
+    },
+    {
+      "id": "src_game_nextcell",
+      "label": "nextCell()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "file_type": "code",
+      "norm_label": "nextcell()",
+      "source_file": "src/game.ts",
+      "source_location": "L148"
     },
     {
       "id": "src_main",
@@ -1196,10 +1229,30 @@
       "source_location": "L20"
     },
     {
+      "id": "public_sw",
+      "label": "sw.js",
+      "_origin": "ast",
+      "community": 10,
+      "file_type": "code",
+      "norm_label": "sw.js",
+      "source_file": "public/sw.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "public_sw_shell",
+      "label": "SHELL",
+      "_origin": "ast",
+      "community": 10,
+      "file_type": "code",
+      "norm_label": "shell",
+      "source_file": "public/sw.js",
+      "source_location": "L2"
+    },
+    {
       "id": "playwright_config",
       "label": "playwright.config.ts",
       "_origin": "ast",
-      "community": 10,
+      "community": 11,
       "file_type": "code",
       "norm_label": "playwright.config.ts",
       "source_file": "playwright.config.ts",
@@ -1209,7 +1262,7 @@
       "id": "vite_config",
       "label": "vite.config.ts",
       "_origin": "ast",
-      "community": 11,
+      "community": 12,
       "file_type": "code",
       "norm_label": "vite.config.ts",
       "source_file": "vite.config.ts",
@@ -1526,20 +1579,10 @@
       "source_location": "L1"
     },
     {
-      "id": "src_game_demo_date",
-      "label": "DEMO_DATE",
-      "_origin": "ast",
-      "community": 8,
-      "file_type": "code",
-      "norm_label": "demo_date",
-      "source_file": "src/game.ts",
-      "source_location": "L373"
-    },
-    {
       "id": "src_game_move_limit",
       "label": "MOVE_LIMIT",
       "_origin": "ast",
-      "community": 8,
+      "community": 7,
       "file_type": "code",
       "norm_label": "move_limit",
       "source_file": "src/game.ts",
@@ -1549,34 +1592,56 @@
       "id": "tests_game_test",
       "label": "game.test.ts",
       "_origin": "ast",
-      "community": 8,
+      "community": 7,
       "file_type": "code",
       "norm_label": "game.test.ts",
       "source_file": "tests/game.test.ts",
       "source_location": "L1"
     },
     {
-      "id": "public_sw",
-      "label": "sw.js",
+      "id": "factory_evidence_review_3_live_review",
+      "label": "live-review.mjs",
       "_origin": "ast",
-      "community": 9,
+      "community": 8,
       "file_type": "code",
-      "norm_label": "sw.js",
-      "source_file": "public/sw.js",
+      "norm_label": "live-review.mjs",
+      "source_file": ".factory/evidence/review-3/live-review.mjs",
       "source_location": "L1"
     },
     {
-      "id": "public_sw_shell",
-      "label": "SHELL",
+      "id": "factory_evidence_review_3_live_review_evidence",
+      "label": "evidence",
       "_origin": "ast",
-      "community": 9,
+      "community": 8,
       "file_type": "code",
-      "norm_label": "shell",
-      "source_file": "public/sw.js",
-      "source_location": "L2"
+      "norm_label": "evidence",
+      "source_file": ".factory/evidence/review-3/live-review.mjs",
+      "source_location": "L26"
+    },
+    {
+      "id": "src_game_demo_date",
+      "label": "DEMO_DATE",
+      "_origin": "ast",
+      "community": 8,
+      "file_type": "code",
+      "norm_label": "demo_date",
+      "source_file": "src/game.ts",
+      "source_location": "L373"
     }
   ],
   "links": [
+    {
+      "source": "factory_evidence_review_3_live_review_touchtap",
+      "target": "factory_evidence_review_3_live_review_check",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": ".factory/evidence/review-3/live-review.mjs",
+      "source_location": "L21",
+      "weight": 1.0
+    },
     {
       "source": "src_game_attemptmove",
       "target": "src_game_movecourier",
@@ -2958,6 +3023,54 @@
       "weight": 1.0
     },
     {
+      "source": "factory_evidence_review_3_live_review",
+      "target": "src_game_createdemostate",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": ".factory/evidence/review-3/live-review.mjs",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "factory_evidence_review_3_live_review",
+      "target": "src_game_demo_date",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": ".factory/evidence/review-3/live-review.mjs",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "factory_evidence_review_3_live_review",
+      "target": "src_game_findsolution",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": ".factory/evidence/review-3/live-review.mjs",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "factory_evidence_review_3_live_review",
+      "target": "src_game_generatepuzzle",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": ".factory/evidence/review-3/live-review.mjs",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
       "source": "package_devdependencies_axe_core_playwright",
       "target": "axe_core_playwright",
       "relation": "imports",
@@ -3510,6 +3623,18 @@
       "weight": 1.0
     },
     {
+      "source": "factory_evidence_review_3_live_review",
+      "target": "src_game",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": ".factory/evidence/review-3/live-review.mjs",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
       "source": "src_main",
       "target": "src_game",
       "relation": "imports_from",
@@ -3555,6 +3680,50 @@
       "context": "parameter_type",
       "source_file": "src/main.ts",
       "source_location": "L185",
+      "weight": 1.0
+    },
+    {
+      "source": "factory_evidence_review_3_live_review",
+      "target": "factory_evidence_review_3_live_review_check",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".factory/evidence/review-3/live-review.mjs",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "factory_evidence_review_3_live_review",
+      "target": "factory_evidence_review_3_live_review_score",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".factory/evidence/review-3/live-review.mjs",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "factory_evidence_review_3_live_review",
+      "target": "factory_evidence_review_3_live_review_touchtap",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".factory/evidence/review-3/live-review.mjs",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "factory_evidence_review_3_live_review",
+      "target": "factory_evidence_review_3_live_review_evidence",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".factory/evidence/review-3/live-review.mjs",
+      "source_location": "L26",
       "weight": 1.0
     },
     {
@@ -5040,5 +5209,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "4a75bdd942a364da43eb2c55897df813ef85df48"
+  "built_at_commit": "3aae453b2091ddbd7b139a28c9a6da99b5a234b7"
 }
