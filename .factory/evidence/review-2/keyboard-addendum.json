@@ -1,0 +1,15 @@
+{
+  "afterSkipTab": {
+    "tag": "A",
+    "text": "Try it with sample data",
+    "href": "/demo"
+  },
+  "keyboard": {
+    "move": {
+      "courier": 2,
+      "direction": "right"
+    },
+    "score": "9 / 40 moves",
+    "focus": true
+  }
+}

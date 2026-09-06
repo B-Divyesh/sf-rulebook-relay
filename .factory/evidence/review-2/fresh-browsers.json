@@ -1,0 +1,100 @@
+{
+  "desktop": {
+    "home": {
+      "status": 200,
+      "url": "https://rulebook-relay.sociobot.in/",
+      "title": "Rulebook Relay — Daily courier puzzle",
+      "h1": "Deliver three couriers before 40 moves",
+      "audience": "For daily-puzzle players who want a new logic rule instead of another word grid.",
+      "primary": "Try it with sample data",
+      "facts": [
+        "Free to play.",
+        "Progress stays in this browser.",
+        "Reloads offline after your first visit."
+      ],
+      "scrollY": 0,
+      "board": {
+        "x": 551.46875,
+        "y": 437,
+        "width": 519.53125,
+        "height": 519.53125
+      },
+      "viewport": {
+        "width": 1366,
+        "height": 900
+      }
+    },
+    "sample": {
+      "title": "Demo — Rulebook Relay",
+      "h1": "Finish a sample courier puzzle",
+      "banner": "Demo — sample data, nothing is saved\nReset demo\nStart for real",
+      "score": "8 / 40 moves",
+      "board": {
+        "x": 551.46875,
+        "y": 499,
+        "width": 519.53125,
+        "height": 519.53125
+      },
+      "scrollY": 0
+    },
+    "example": "Example complete. After Coral moves, Teal must take the next move.",
+    "reset": {
+      "score": "8 / 40 moves",
+      "real": "unchanged"
+    },
+    "exit": {
+      "real": "unchanged",
+      "demo": null
+    },
+    "consoleErrors": []
+  },
+  "phone": {
+    "home": {
+      "status": 200,
+      "url": "https://rulebook-relay.sociobot.in/",
+      "title": "Rulebook Relay — Daily courier puzzle",
+      "h1": "Deliver three couriers before 40 moves",
+      "audience": "For daily-puzzle players who want a new logic rule instead of another word grid.",
+      "primary": "Try it with sample data",
+      "facts": [
+        "Free to play.",
+        "Progress stays in this browser.",
+        "Reloads offline after your first visit."
+      ],
+      "scrollY": 0,
+      "board": {
+        "x": 20,
+        "y": 571.015625,
+        "width": 350,
+        "height": 350
+      },
+      "viewport": {
+        "width": 390,
+        "height": 664
+      }
+    },
+    "sample": {
+      "title": "Demo — Rulebook Relay",
+      "h1": "Finish a sample courier puzzle",
+      "banner": "Demo — sample data, nothing is saved\nReset demo\nStart for real",
+      "score": "8 / 40 moves",
+      "board": {
+        "x": 20,
+        "y": 586.90625,
+        "width": 350,
+        "height": 350
+      },
+      "scrollY": 0
+    },
+    "example": "Example complete. After Coral moves, Teal must take the next move.",
+    "reset": {
+      "score": "8 / 40 moves",
+      "real": "unchanged"
+    },
+    "exit": {
+      "real": "unchanged",
+      "demo": null
+    },
+    "consoleErrors": []
+  }
+}

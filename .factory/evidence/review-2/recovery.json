@@ -1,0 +1,12 @@
+{
+  "reloadScore": "9 / 40 moves",
+  "undoScore": "8 / 40 moves",
+  "paused": {
+    "text": "Game paused",
+    "score": "8 / 40 moves"
+  },
+  "resumed": {
+    "score": "8 / 40 moves",
+    "boardFocus": true
+  }
+}

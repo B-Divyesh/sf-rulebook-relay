@@ -1,0 +1,32 @@
+{
+  "runs": [
+    {
+      "run": 1,
+      "performance": 96,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcpMs": 1203,
+      "cls": 0
+    },
+    {
+      "run": 2,
+      "performance": 95,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcpMs": 1233,
+      "cls": 0
+    },
+    {
+      "run": 3,
+      "performance": 96,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcpMs": 1203,
+      "cls": 0
+    }
+  ],
+  "performanceMedian": 96
+}

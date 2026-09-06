@@ -1,0 +1,250 @@
+{
+  "/": [
+    {
+      "text": "Skip to game or page content",
+      "href": "https://rulebook-relay.sociobot.in/#main"
+    },
+    {
+      "text": "R↦ Rulebook Relay",
+      "href": "https://rulebook-relay.sociobot.in/"
+    },
+    {
+      "text": "Demo",
+      "href": "https://rulebook-relay.sociobot.in/demo"
+    },
+    {
+      "text": "Settings",
+      "href": "https://rulebook-relay.sociobot.in/settings"
+    },
+    {
+      "text": "Privacy",
+      "href": "https://rulebook-relay.sociobot.in/privacy"
+    },
+    {
+      "text": "Try it with sample data",
+      "href": "https://rulebook-relay.sociobot.in/demo"
+    },
+    {
+      "text": "Play today’s puzzle",
+      "href": "https://rulebook-relay.sociobot.in/#daily-game"
+    },
+    {
+      "text": "Read the privacy details",
+      "href": "https://rulebook-relay.sociobot.in/privacy"
+    },
+    {
+      "text": "Privacy",
+      "href": "https://rulebook-relay.sociobot.in/privacy"
+    },
+    {
+      "text": "Terms",
+      "href": "https://rulebook-relay.sociobot.in/terms"
+    },
+    {
+      "text": "Built by Param Factory (external site)",
+      "href": "https://sociobot.in/"
+    }
+  ],
+  "/demo": [
+    {
+      "text": "Skip to game or page content",
+      "href": "https://rulebook-relay.sociobot.in/demo#main"
+    },
+    {
+      "text": "R↦ Rulebook Relay",
+      "href": "https://rulebook-relay.sociobot.in/"
+    },
+    {
+      "text": "Demo",
+      "href": "https://rulebook-relay.sociobot.in/demo"
+    },
+    {
+      "text": "Settings",
+      "href": "https://rulebook-relay.sociobot.in/settings?demo=1"
+    },
+    {
+      "text": "Privacy",
+      "href": "https://rulebook-relay.sociobot.in/privacy"
+    },
+    {
+      "text": "Start for real",
+      "href": "https://rulebook-relay.sociobot.in/"
+    },
+    {
+      "text": "Finish the sample",
+      "href": "https://rulebook-relay.sociobot.in/demo#daily-game"
+    },
+    {
+      "text": "Play today’s puzzle",
+      "href": "https://rulebook-relay.sociobot.in/"
+    },
+    {
+      "text": "Read the privacy details",
+      "href": "https://rulebook-relay.sociobot.in/privacy"
+    },
+    {
+      "text": "Privacy",
+      "href": "https://rulebook-relay.sociobot.in/privacy"
+    },
+    {
+      "text": "Terms",
+      "href": "https://rulebook-relay.sociobot.in/terms"
+    },
+    {
+      "text": "Built by Param Factory (external site)",
+      "href": "https://sociobot.in/"
+    }
+  ],
+  "/settings": [
+    {
+      "text": "Skip to game or page content",
+      "href": "https://rulebook-relay.sociobot.in/settings#main"
+    },
+    {
+      "text": "R↦ Rulebook Relay",
+      "href": "https://rulebook-relay.sociobot.in/"
+    },
+    {
+      "text": "Demo",
+      "href": "https://rulebook-relay.sociobot.in/demo"
+    },
+    {
+      "text": "Settings",
+      "href": "https://rulebook-relay.sociobot.in/settings"
+    },
+    {
+      "text": "Privacy",
+      "href": "https://rulebook-relay.sociobot.in/privacy"
+    },
+    {
+      "text": "Privacy",
+      "href": "https://rulebook-relay.sociobot.in/privacy"
+    },
+    {
+      "text": "Terms",
+      "href": "https://rulebook-relay.sociobot.in/terms"
+    },
+    {
+      "text": "Built by Param Factory (external site)",
+      "href": "https://sociobot.in/"
+    }
+  ],
+  "/privacy": [
+    {
+      "text": "Skip to game or page content",
+      "href": "https://rulebook-relay.sociobot.in/privacy#main"
+    },
+    {
+      "text": "R↦ Rulebook Relay",
+      "href": "https://rulebook-relay.sociobot.in/"
+    },
+    {
+      "text": "Demo",
+      "href": "https://rulebook-relay.sociobot.in/demo"
+    },
+    {
+      "text": "Settings",
+      "href": "https://rulebook-relay.sociobot.in/settings"
+    },
+    {
+      "text": "Privacy",
+      "href": "https://rulebook-relay.sociobot.in/privacy"
+    },
+    {
+      "text": "Open settings",
+      "href": "https://rulebook-relay.sociobot.in/settings"
+    },
+    {
+      "text": "privacy@sociobot.in",
+      "href": "mailto:privacy@sociobot.in"
+    },
+    {
+      "text": "Privacy",
+      "href": "https://rulebook-relay.sociobot.in/privacy"
+    },
+    {
+      "text": "Terms",
+      "href": "https://rulebook-relay.sociobot.in/terms"
+    },
+    {
+      "text": "Built by Param Factory (external site)",
+      "href": "https://sociobot.in/"
+    }
+  ],
+  "/terms": [
+    {
+      "text": "Skip to game or page content",
+      "href": "https://rulebook-relay.sociobot.in/terms#main"
+    },
+    {
+      "text": "R↦ Rulebook Relay",
+      "href": "https://rulebook-relay.sociobot.in/"
+    },
+    {
+      "text": "Demo",
+      "href": "https://rulebook-relay.sociobot.in/demo"
+    },
+    {
+      "text": "Settings",
+      "href": "https://rulebook-relay.sociobot.in/settings"
+    },
+    {
+      "text": "Privacy",
+      "href": "https://rulebook-relay.sociobot.in/privacy"
+    },
+    {
+      "text": "support@sociobot.in",
+      "href": "mailto:support@sociobot.in"
+    },
+    {
+      "text": "Privacy",
+      "href": "https://rulebook-relay.sociobot.in/privacy"
+    },
+    {
+      "text": "Terms",
+      "href": "https://rulebook-relay.sociobot.in/terms"
+    },
+    {
+      "text": "Built by Param Factory (external site)",
+      "href": "https://sociobot.in/"
+    }
+  ],
+  "/review-2-missing": [
+    {
+      "text": "Skip to game or page content",
+      "href": "https://rulebook-relay.sociobot.in/review-2-missing#main"
+    },
+    {
+      "text": "R↦ Rulebook Relay",
+      "href": "https://rulebook-relay.sociobot.in/"
+    },
+    {
+      "text": "Demo",
+      "href": "https://rulebook-relay.sociobot.in/demo"
+    },
+    {
+      "text": "Settings",
+      "href": "https://rulebook-relay.sociobot.in/settings"
+    },
+    {
+      "text": "Privacy",
+      "href": "https://rulebook-relay.sociobot.in/privacy"
+    },
+    {
+      "text": "Play today’s puzzle",
+      "href": "https://rulebook-relay.sociobot.in/"
+    },
+    {
+      "text": "Privacy",
+      "href": "https://rulebook-relay.sociobot.in/privacy"
+    },
+    {
+      "text": "Terms",
+      "href": "https://rulebook-relay.sociobot.in/terms"
+    },
+    {
+      "text": "Built by Param Factory (external site)",
+      "href": "https://sociobot.in/"
+    }
+  ]
+}

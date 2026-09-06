@@ -1,0 +1,50 @@
+{
+  "solutionMoves": 10,
+  "totalMoves": 18,
+  "skip": {
+    "text": "Skip to game or page content",
+    "box": {
+      "x": 8,
+      "y": 8,
+      "width": 270.5,
+      "height": 48.796875
+    }
+  },
+  "afterSkip": {
+    "hash": "#main",
+    "active": "Skip to game or page content R↦ Rulebook Relay Demo Settings Privacy Daily 6×6 logic game Deliver three couriers before 40 moves For daily-puzzle players who want a new logic rule instead of another word grid. Try it with sample dataPlay today’s puzzle The sample opens partway through a verified route. Free to play. Progress stays in this browser. Reloads offline after your first visit. Seed 20260906 · verified in 23 moves Today’s puzzle: Ice tiles Pause game Today’s rule card Ice tiles A courier that enters ice keeps moving until it leaves the ice or meets a block. C ➜ ✓ Try the rule One right move crosses the joined ice squares and stops on dry ground. 0 / 40 moves 0 / 3 delivered 0 rule cards completed C C T T G G Selected courier: Coral CCoralTTealGGold ↑ ← ↓ → Undo last move Coral is selected. Choose a direction. Keyboard: 1–3 selects. Arrow keys move. Coral: row 1, column 1. Teal: row 3, column 1. Gold: row 5, column 1. Use arrow keys to move the selected courier. Blocked cells: row 1 column 2, row 1 column 5, row 3 column 5, row 4 column 4, row 5 column 5, row 6 column 4. Ice cells: row 2 column 3, row 4 column 2, row 5 column 2, row 5 column 3, row 6 column 2. How it works Select a courier.Tap its counter or press 1, 2, or 3. Move one square.Use arrows, the direction buttons, or swipe the board. Reach matching goals.Deliver all three before the move count reaches 40. Your play stays on this device The game stores today’s board, completed days, sound, and motion settings in this browser. It has no accounts, ads, analytics, or social posting gate. Read the privacy details Rulebook Relay is a free daily courier puzzle. Privacy Terms Built by Param Factory (external site) Original scene generated for this game. Version 1.0.0.",
+    "tag": "BODY"
+  },
+  "invalid": {
+    "before": "8 / 40 moves",
+    "after": "8 / 40 moves",
+    "message": "Gold must move next."
+  },
+  "keyboard": {
+    "score": "8 / 40 moves",
+    "focus": true
+  },
+  "end": {
+    "heading": "All three couriers arrived",
+    "summary": "ROUTE COMPLETE\n\nAll three couriers arrived\n\nYou solved seed 20260901 in 18 moves with relay order.\n\nRestart puzzle\nReview board",
+    "focused": {
+      "tag": "BUTTON",
+      "text": "Restart puzzle"
+    }
+  },
+  "restart": {
+    "score": "0 / 40 moves",
+    "dialogCount": 0
+  },
+  "settingsFocus": "Set game motion and sound",
+  "back": {
+    "url": "https://rulebook-relay.sociobot.in/demo",
+    "title": "Demo — Rulebook Relay",
+    "focus": "Finish a sample courier puzzle"
+  },
+  "forward": {
+    "url": "https://rulebook-relay.sociobot.in/settings?demo=1",
+    "title": "Settings — Rulebook Relay",
+    "focus": "Set game motion and sound"
+  }
+}

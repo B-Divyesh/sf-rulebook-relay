@@ -1,0 +1,12 @@
+{
+  "cancel": {
+    "status": "Nothing was deleted.",
+    "real": "remove",
+    "demo": "keep"
+  },
+  "confirm": {
+    "status": "Saved daily progress and settings were deleted.",
+    "real": null,
+    "demo": "keep"
+  }
+}

@@ -233,3 +233,34 @@ accessibility, best practices, and SEO.
 See `.factory/verification-3.md` and
 `.factory/evidence/verification-3/` for the complete evidence and earlier
 finding disposition.
+
+## Strict review 2 — current status
+
+On 6 September 2026 UTC, strict review 2 reviewed implementation
+`1a28a7985130c2b80d3e66bace716cc2c89e3b33`. The later documentation commit
+`49a1d0e0fd08b323e7f7c9b098387774bc1dc4e1` and wrapper
+`074191eac66e5f733c54fc4c0b75bd0f9a8066a4` contain no later product change.
+Fresh byte comparisons matched the live HTML, JavaScript, CSS, and designed
+404 files to the implementation candidate.
+
+The verdict is **PASS** with zero findings and zero untested claims. All 12
+claim commands passed separately from a fresh candidate checkout. `npm test`
+passed 9 unit tests and 16 browser tests, and `npm run build` created `dist/`.
+The same 16 browser tests passed against live HTTPS.
+
+Fresh desktop and 390 × 664 phone sessions showed the job, audience, sample
+action, and board before scrolling. The isolated sample opened at 8 moves,
+reset to 8 without changing daily data, and exited without copying sample data.
+A recorded visible-control run reached the 18-move win dialog; restart returned
+to move zero. The separate live boundary run ended on the 40-move loss screen.
+
+Keyboard, real touch, real touch swipe, focus, reduced motion, 200% text,
+offline reload, settings persistence, invalid input, corrupt-state recovery,
+and data deletion passed. Axe CLI found zero violations on six routes. Three
+mobile Lighthouse runs had a performance median of 96 and scored 100 for
+accessibility, best practices, and SEO. The throttled mobile loop measured
+60 fps. A missing route returned the expected designed HTTP 404.
+
+See `.factory/review-2.md` and `.factory/evidence/review-2/` for the report and
+evidence. All earlier findings, including the untested README claims, short
+phone layout, touch targets, and incomplete 404 structure, remain fixed.
