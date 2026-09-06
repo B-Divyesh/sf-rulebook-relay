@@ -1,0 +1,10 @@
+{
+  "afterMove": "9 / 40 moves",
+  "afterReload": "9 / 40 moves",
+  "afterUndo": "8 / 40 moves",
+  "undoAfterReload": "8 / 40 moves",
+  "whilePaused": "8 / 40 moves",
+  "afterResume": "9 / 40 moves",
+  "corruptMessage": "Saved progress could not be read. A fresh puzzle was loaded.",
+  "corruptBoardVisible": true
+}

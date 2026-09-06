@@ -1,0 +1,65 @@
+[
+  {
+    "file": "index.html",
+    "status": 200,
+    "localBytes": 1764,
+    "liveBytes": 1764,
+    "localSha256": "7d8c68fdc7d548a90342515869526ceb4ad09eb1f8762aa5c8534f478059641a",
+    "liveSha256": "7d8c68fdc7d548a90342515869526ceb4ad09eb1f8762aa5c8534f478059641a",
+    "match": true
+  },
+  {
+    "file": "assets/index-DfAPhrF2.js",
+    "status": 200,
+    "localBytes": 30552,
+    "liveBytes": 30552,
+    "localSha256": "fa356bd2f174834b7859c9d7f44e5c3abe5772a17556d0b7ff18e8b33cb7ffd4",
+    "liveSha256": "fa356bd2f174834b7859c9d7f44e5c3abe5772a17556d0b7ff18e8b33cb7ffd4",
+    "match": true
+  },
+  {
+    "file": "assets/index-1YclO1A5.css",
+    "status": 200,
+    "localBytes": 16207,
+    "liveBytes": 16207,
+    "localSha256": "2eebacc51a6d190a4802ff418c242a5f9279483a3e72640a3d305ed8e69bd457",
+    "liveSha256": "2eebacc51a6d190a4802ff418c242a5f9279483a3e72640a3d305ed8e69bd457",
+    "match": true
+  },
+  {
+    "file": "404.html",
+    "status": 200,
+    "localBytes": 2096,
+    "liveBytes": 2096,
+    "localSha256": "01bd9ee317f373c19b8a294203dbc9c659f52560e72ca7dfac3acbfa8d2c2e2c",
+    "liveSha256": "01bd9ee317f373c19b8a294203dbc9c659f52560e72ca7dfac3acbfa8d2c2e2c",
+    "match": true
+  },
+  {
+    "file": "assets/404.css",
+    "status": 200,
+    "localBytes": 3987,
+    "liveBytes": 3987,
+    "localSha256": "eede8d0a2eed05ff61b5f906463d5cb183dc8c593fe6d482da0ee5bfb6fb7b67",
+    "liveSha256": "eede8d0a2eed05ff61b5f906463d5cb183dc8c593fe6d482da0ee5bfb6fb7b67",
+    "match": true
+  },
+  {
+    "file": "sw.js",
+    "status": 200,
+    "localBytes": 2573,
+    "liveBytes": 2573,
+    "localSha256": "d4e0616f5ecaaefc134ff87d6e9ffe85c0d883361622d0e42168feda62cea6e6",
+    "liveSha256": "d4e0616f5ecaaefc134ff87d6e9ffe85c0d883361622d0e42168feda62cea6e6",
+    "match": true
+  },
+  {
+    "file": "manifest.webmanifest",
+    "status": 200,
+    "localBytes": 370,
+    "liveBytes": 370,
+    "localSha256": "cf5ed470977f2dd36f0e5b86ae1211ceb3663b4e65587277de9d836dd8c1516d",
+    "liveSha256": "cf5ed470977f2dd36f0e5b86ae1211ceb3663b4e65587277de9d836dd8c1516d",
+    "match": true
+  }
+]

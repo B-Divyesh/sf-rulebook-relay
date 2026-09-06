@@ -1,0 +1,233 @@
+{
+  "runAt": "2026-09-06T03:58:09.888Z",
+  "base": "https://rulebook-relay.sociobot.in",
+  "desktop": {
+    "home": {
+      "status": 200,
+      "title": "Rulebook Relay — Daily courier puzzle",
+      "h1": "Deliver three couriers before 40 moves",
+      "audience": "For daily-puzzle players who want a new logic rule instead of another word grid.",
+      "firstAction": "Try it with sample data",
+      "facts": [
+        "Free to play.",
+        "Progress stays in this browser.",
+        "Reloads offline after your first visit."
+      ],
+      "boardTop": 437,
+      "viewportHeight": 900,
+      "horizontalOverflow": 0
+    },
+    "sample": {
+      "label": "Demo — sample data, nothing is saved",
+      "score": "8 / 40 moves",
+      "rule": "Sample puzzle: Relay order",
+      "seed": "SEED 20260901 · VERIFIED IN 18 MOVES"
+    },
+    "invalid": {
+      "score": "8 / 40 moves",
+      "message": "Gold must move next."
+    },
+    "win": {
+      "score": "18 / 40 moves",
+      "heading": "All three couriers arrived",
+      "copy": "You solved seed 20260901 in 18 moves with relay order.",
+      "focused": "Restart puzzle"
+    },
+    "restartScore": "0 / 40 moves",
+    "reset": {
+      "score": "8 / 40 moves",
+      "realValue": "keep-real"
+    },
+    "exitDemo": {
+      "pathname": "/",
+      "realValue": "keep-real",
+      "demoKeys": []
+    },
+    "network": {
+      "origins": [
+        "https://rulebook-relay.sociobot.in"
+      ],
+      "methods": [
+        "GET"
+      ]
+    }
+  },
+  "phone": {
+    "home": {
+      "h1": "Deliver three couriers before 40 moves",
+      "audience": "For daily-puzzle players who want a new logic rule instead of another word grid.",
+      "firstAction": "Try it with sample data",
+      "boardTop": 571.015625,
+      "viewportHeight": 664,
+      "horizontalOverflow": 0
+    },
+    "sample": {
+      "label": "Demo — sample data, nothing is saved",
+      "score": "8 / 40 moves",
+      "boardTop": 586.90625
+    },
+    "realTouch": {
+      "tapScore": "9 / 40 moves",
+      "swipeScore": "10 / 40 moves"
+    },
+    "undersizedTargets": [],
+    "text200": {
+      "overflow": 0,
+      "boardVisible": true,
+      "controlsVisible": true
+    }
+  },
+  "accessibility": [
+    {
+      "route": "/",
+      "violations": []
+    },
+    {
+      "route": "/demo",
+      "violations": []
+    },
+    {
+      "route": "/settings",
+      "violations": []
+    },
+    {
+      "route": "/privacy",
+      "violations": []
+    },
+    {
+      "route": "/terms",
+      "violations": []
+    },
+    {
+      "route": "/missing-review-3",
+      "violations": []
+    }
+  ],
+  "keyboard": {
+    "firstFocus": "Skip to game or page content",
+    "afterSkip": "Try it with sample data",
+    "moveScore": "9 / 40 moves",
+    "privacyFocus": "Understand what this game stores",
+    "backFocus": "Finish a sample courier puzzle"
+  },
+  "reducedMotion": {
+    "transitionDuration": "1e-05s",
+    "result": "Example complete. After Coral moves, Teal must take the next move."
+  },
+  "offline": {
+    "reloadResponse": 200,
+    "heading": "Finish a sample courier puzzle",
+    "example": "Example complete. After Coral moves, Teal must take the next move."
+  },
+  "deletion": {
+    "cancelText": "Nothing was deleted.",
+    "finalText": "Saved daily progress and settings were deleted.",
+    "realKeys": [],
+    "demoValue": "keep-demo"
+  },
+  "routes": [
+    {
+      "route": "/",
+      "status": 200,
+      "title": "Rulebook Relay — Daily courier puzzle",
+      "h1": "Deliver three couriers before 40 moves",
+      "h1Count": 1,
+      "mainCount": 1,
+      "lang": "en",
+      "violations": [],
+      "headerLinks": [
+        "R↦\nRulebook Relay",
+        "Demo",
+        "Settings",
+        "Privacy"
+      ],
+      "footerText": "Rulebook Relay is a free daily courier puzzle. Privacy Terms Built by Param Factory (external site) Original scene generated for this game. Version 1.0.0."
+    },
+    {
+      "route": "/demo",
+      "status": 200,
+      "title": "Demo — Rulebook Relay",
+      "h1": "Finish a sample courier puzzle",
+      "h1Count": 1,
+      "mainCount": 1,
+      "lang": "en",
+      "violations": [],
+      "headerLinks": [
+        "R↦\nRulebook Relay",
+        "Demo",
+        "Settings",
+        "Privacy"
+      ],
+      "footerText": "Rulebook Relay is a free daily courier puzzle. Privacy Terms Built by Param Factory (external site) Original scene generated for this game. Version 1.0.0."
+    },
+    {
+      "route": "/settings",
+      "status": 200,
+      "title": "Settings — Rulebook Relay",
+      "h1": "Set game motion and sound",
+      "h1Count": 1,
+      "mainCount": 1,
+      "lang": "en",
+      "violations": [],
+      "headerLinks": [
+        "R↦\nRulebook Relay",
+        "Demo",
+        "Settings",
+        "Privacy"
+      ],
+      "footerText": "Rulebook Relay is a free daily courier puzzle. Privacy Terms Built by Param Factory (external site) Original scene generated for this game. Version 1.0.0."
+    },
+    {
+      "route": "/privacy",
+      "status": 200,
+      "title": "Privacy — Rulebook Relay",
+      "h1": "Understand what this game stores",
+      "h1Count": 1,
+      "mainCount": 1,
+      "lang": "en",
+      "violations": [],
+      "headerLinks": [
+        "R↦\nRulebook Relay",
+        "Demo",
+        "Settings",
+        "Privacy"
+      ],
+      "footerText": "Rulebook Relay is a free daily courier puzzle. Privacy Terms Built by Param Factory (external site) Original scene generated for this game. Version 1.0.0."
+    },
+    {
+      "route": "/terms",
+      "status": 200,
+      "title": "Terms — Rulebook Relay",
+      "h1": "Read the terms for playing",
+      "h1Count": 1,
+      "mainCount": 1,
+      "lang": "en",
+      "violations": [],
+      "headerLinks": [
+        "R↦\nRulebook Relay",
+        "Demo",
+        "Settings",
+        "Privacy"
+      ],
+      "footerText": "Rulebook Relay is a free daily courier puzzle. Privacy Terms Built by Param Factory (external site) Original scene generated for this game. Version 1.0.0."
+    },
+    {
+      "route": "/missing-review-3",
+      "status": 404,
+      "title": "Page not found — Rulebook Relay",
+      "h1": "Return to today’s courier puzzle",
+      "h1Count": 1,
+      "mainCount": 1,
+      "lang": "en",
+      "violations": [],
+      "headerLinks": [
+        "R↦\nRulebook Relay",
+        "Demo",
+        "Settings",
+        "Privacy"
+      ],
+      "footerText": "Rulebook Relay is a free daily courier puzzle. Privacy Terms Built by Param Factory (external site) Original scene generated for this game. Version 1.0.0."
+    }
+  ],
+  "errors": []
+}

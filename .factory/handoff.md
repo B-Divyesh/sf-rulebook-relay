@@ -238,7 +238,7 @@ finding disposition.
 
 On 6 September 2026 UTC, strict review 2 reviewed implementation
 `1a28a7985130c2b80d3e66bace716cc2c89e3b33`. The later documentation commit
-`49a1d0e0fd08b323e7f7c9b098387774bc1dc4e1` and wrapper
+`49a1d0e7d8ca88cf30a27c3f5f8e8788f50e232b` and wrapper
 `074191eac66e5f733c54fc4c0b75bd0f9a8066a4` contain no later product change.
 Fresh byte comparisons matched the live HTML, JavaScript, CSS, and designed
 404 files to the implementation candidate.
@@ -264,3 +264,31 @@ accessibility, best practices, and SEO. The throttled mobile loop measured
 See `.factory/review-2.md` and `.factory/evidence/review-2/` for the report and
 evidence. All earlier findings, including the untested README claims, short
 phone layout, touch targets, and incomplete 404 structure, remain fixed.
+
+## Strict review 3 — current status
+
+On 6 September 2026 UTC, a fresh strict review checked implementation
+`1a28a7985130c2b80d3e66bace716cc2c89e3b33` against live HTTPS. The
+documentation baseline was `4a75bdd942a364da43eb2c55897df813ef85df48`;
+commits after the implementation contain documentation, evidence, and Graphify
+output only. Live HTML, JavaScript, CSS, service worker, manifest, and 404 files
+match the implementation candidate byte for byte.
+
+The verdict is **PASS** with zero findings and zero untested claims. All 12
+declared claim commands passed separately from a fresh candidate checkout.
+`npm test` passed 9 unit tests and 16 browser tests, and `npm run build` created
+`dist/`. The same 16 browser tests passed against the live URL.
+
+Fresh desktop and 390 × 664 phone sessions showed the job, audience, sample
+action, and playable board before scrolling. A traced visible-control run
+reached the focused 18-move win dialog; restart returned to move zero. A
+separate live boundary run reached the 40-move loss screen. Real phone touch
+and touch-swipe input, keyboard focus, pause, undo, reload recovery, malformed
+storage recovery, reduced motion, 200% text, sample isolation, daily-data
+deletion, offline reload, legal pages, links, and the designed 404 all passed.
+
+Full Axe scans found zero violations on six live routes. The URL verifier found
+no console or structural errors. Three mobile Lighthouse runs had a performance
+median of 94 and scored 100 for accessibility, best practices, and SEO. The
+four-times-throttled phone loop measured 60 fps. All earlier findings remain
+fixed. See `.factory/review-3.md` and `.factory/evidence/review-3/`.

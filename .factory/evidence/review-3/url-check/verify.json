@@ -1,0 +1,14 @@
+{
+  "url": "https://rulebook-relay.sociobot.in",
+  "loadMs": 866,
+  "errors": [],
+  "a11y": {
+    "title": "Rulebook Relay — Daily courier puzzle",
+    "lang": "en",
+    "h1": 1,
+    "main": true,
+    "imgsMissingAlt": 0,
+    "buttonsUnlabeled": 0,
+    "textLength": 1771
+  }
+}
