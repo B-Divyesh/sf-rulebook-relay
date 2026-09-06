@@ -1,188 +1,272 @@
 {
   ".factory/brief.json": {
-    "mtime": 1788652334.669584,
-    "seen": 1788652335.9134505,
+    "mtime": 1788666737.6452963,
+    "seen": 1788666739.165636,
     "ast_hash": "073976cd01f0809a391ac605ee1c6951",
     "semantic_hash": "073976cd01f0809a391ac605ee1c6951"
   },
   ".factory/claims.json": {
-    "mtime": 1788652334.669584,
-    "seen": 1788652335.9134552,
+    "mtime": 1788666737.6452963,
+    "seen": 1788666739.1656404,
     "ast_hash": "09b424018ca42da1fa9b316596e710f2",
     "semantic_hash": "09b424018ca42da1fa9b316596e710f2"
   },
   ".factory/evidence/live/lighthouse.json": {
-    "mtime": 1788652334.673584,
-    "seen": 1788652335.9134574,
+    "mtime": 1788666737.6492965,
+    "seen": 1788666739.1656427,
     "ast_hash": "ea95738f709f37b036e338fe3985df88",
     "semantic_hash": "ea95738f709f37b036e338fe3985df88"
   },
   ".factory/evidence/live/verify.json": {
-    "mtime": 1788652334.6775837,
-    "seen": 1788652335.9134583,
+    "mtime": 1788666737.6532967,
+    "seen": 1788666739.1656446,
     "ast_hash": "619b1ba79f7d46befaf4962f51b59ab4",
     "semantic_hash": "619b1ba79f7d46befaf4962f51b59ab4"
   },
   ".factory/evidence/local/lighthouse.json": {
-    "mtime": 1788652334.6815836,
-    "seen": 1788652335.9134593,
+    "mtime": 1788666737.6532967,
+    "seen": 1788666739.1656458,
     "ast_hash": "447f312e4f86c800351893881bf7adb3",
     "semantic_hash": "447f312e4f86c800351893881bf7adb3"
   },
   ".factory/evidence/local/verify.json": {
-    "mtime": 1788652334.6855834,
-    "seen": 1788652335.9134603,
+    "mtime": 1788666737.6572967,
+    "seen": 1788666739.1656468,
     "ast_hash": "796aad6348a16e6f92f46d8092914415",
     "semantic_hash": "796aad6348a16e6f92f46d8092914415"
   },
   "assets/src/rulebook-relay-scene.json": {
-    "mtime": 1788652334.7535806,
-    "seen": 1788652335.9134743,
+    "mtime": 1788666737.7572992,
+    "seen": 1788666739.1656775,
     "ast_hash": "43bea6061ddd0818220dc5f6e0449398",
     "semantic_hash": "43bea6061ddd0818220dc5f6e0449398"
   },
   "assets/src/rulebook-relay-scene.png.json": {
-    "mtime": 1788652334.7615802,
-    "seen": 1788652335.9134753,
+    "mtime": 1788666737.7652996,
+    "seen": 1788666739.1656783,
     "ast_hash": "6751f9bdeaf163f643e7dfc490f8492c",
     "semantic_hash": "6751f9bdeaf163f643e7dfc490f8492c"
   },
   "package.json": {
-    "mtime": 1788652334.7615802,
-    "seen": 1788652335.9134767,
+    "mtime": 1788666737.7652996,
+    "seen": 1788666739.1656792,
     "ast_hash": "f03965173aa70d1755da22a69c3dd2b4",
     "semantic_hash": "f03965173aa70d1755da22a69c3dd2b4"
   },
   "playwright.config.ts": {
-    "mtime": 1788652334.7615802,
-    "seen": 1788652335.9134777,
+    "mtime": 1788666737.7652996,
+    "seen": 1788666739.1656802,
     "ast_hash": "e186001f84f04c307cd4dd9861a982e0",
     "semantic_hash": "e186001f84f04c307cd4dd9861a982e0"
   },
   "public/staticwebapp.config.json": {
-    "mtime": 1788652334.7615802,
-    "seen": 1788652335.9134784,
+    "mtime": 1788666737.7652996,
+    "seen": 1788666739.165681,
     "ast_hash": "bc0b50fe0f24b6cd36310afc9a462a11",
     "semantic_hash": "bc0b50fe0f24b6cd36310afc9a462a11"
   },
   "public/sw.js": {
-    "mtime": 1788652334.7615802,
-    "seen": 1788652335.913479,
+    "mtime": 1788666737.7652996,
+    "seen": 1788666739.1656818,
     "ast_hash": "52d47f2c77e655c4b307ead89ab5f885",
     "semantic_hash": "52d47f2c77e655c4b307ead89ab5f885"
   },
   "src/game.ts": {
-    "mtime": 1788652334.7615802,
-    "seen": 1788652335.9134803,
+    "mtime": 1788666737.7652996,
+    "seen": 1788666739.165683,
     "ast_hash": "188808623a73ab1b028ab2312fd26d81",
     "semantic_hash": "188808623a73ab1b028ab2312fd26d81"
   },
   "src/main.ts": {
-    "mtime": 1788652334.7655802,
-    "seen": 1788652335.913481,
+    "mtime": 1788666737.7692995,
+    "seen": 1788666739.1656837,
     "ast_hash": "74d039fd3c909c2ceaa5bec0693f0218",
     "semantic_hash": "74d039fd3c909c2ceaa5bec0693f0218"
   },
   "tests/e2e/game.spec.ts": {
-    "mtime": 1788652334.7655802,
-    "seen": 1788652335.9134817,
+    "mtime": 1788666737.7692995,
+    "seen": 1788666739.1656847,
     "ast_hash": "4078f45f60942a61f35fdc204e252e21",
     "semantic_hash": "4078f45f60942a61f35fdc204e252e21"
   },
   "tests/game.test.ts": {
-    "mtime": 1788652334.7655802,
-    "seen": 1788652335.9134824,
+    "mtime": 1788666737.7692995,
+    "seen": 1788666739.1656857,
     "ast_hash": "e34d009eb2d9e7f9aa2561eefd5b5186",
     "semantic_hash": "e34d009eb2d9e7f9aa2561eefd5b5186"
   },
   "tsconfig.json": {
-    "mtime": 1788652334.7655802,
-    "seen": 1788652335.9134836,
+    "mtime": 1788666737.7692995,
+    "seen": 1788666739.1656868,
     "ast_hash": "63b63d957ae765868f5900703e6bf437",
     "semantic_hash": "63b63d957ae765868f5900703e6bf437"
   },
   "vite.config.ts": {
-    "mtime": 1788652334.7655802,
-    "seen": 1788652335.9134843,
+    "mtime": 1788666737.7692995,
+    "seen": 1788666739.1656878,
     "ast_hash": "6f1150ddace8b3d519f2a1fd01dfa776",
     "semantic_hash": "6f1150ddace8b3d519f2a1fd01dfa776"
   },
   ".factory/evidence/repair-1/lighthouse-live.json": {
-    "mtime": 1788652334.6855834,
-    "seen": 1788652335.913461,
+    "mtime": 1788666737.6572967,
+    "seen": 1788666739.1656482,
     "ast_hash": "b2be1db07316866706fb300e64c32150",
     "semantic_hash": "b2be1db07316866706fb300e64c32150"
   },
   ".factory/evidence/repair-1/verify.json": {
-    "mtime": 1788652334.6895833,
-    "seen": 1788652335.9134617,
+    "mtime": 1788666737.6612968,
+    "seen": 1788666739.1656497,
     "ast_hash": "3b1f2ae1eeb27a0123534a4d525518bb",
     "semantic_hash": "3b1f2ae1eeb27a0123534a4d525518bb"
   },
   ".factory/evidence/verification-2/lighthouse-live.json": {
-    "mtime": 1788652334.721582,
-    "seen": 1788652335.9134672,
+    "mtime": 1788666737.7252984,
+    "seen": 1788666739.1656704,
     "ast_hash": "08bab8644915112ccac8125dc0fe9a33",
     "semantic_hash": "08bab8644915112ccac8125dc0fe9a33"
   },
   ".factory/evidence/verification-2/qa-result.json": {
-    "mtime": 1788652334.7375813,
-    "seen": 1788652335.913468,
+    "mtime": 1788666737.7452989,
+    "seen": 1788666739.1656713,
     "ast_hash": "3f6046f4ba2aee35da5dabe97a40ea69",
     "semantic_hash": "3f6046f4ba2aee35da5dabe97a40ea69"
   },
   ".factory/evidence/verification-2/verify.json": {
-    "mtime": 1788652334.7415812,
-    "seen": 1788652335.9134688,
+    "mtime": 1788666737.7452989,
+    "seen": 1788666739.1656725,
     "ast_hash": "3b1f2ae1eeb27a0123534a4d525518bb",
     "semantic_hash": "3b1f2ae1eeb27a0123534a4d525518bb"
   },
   ".factory/evidence/repair-2/live/lighthouse.json": {
-    "mtime": 1788652334.7135823,
-    "seen": 1788652335.913463,
+    "mtime": 1788666737.6852975,
+    "seen": 1788666739.1656508,
     "ast_hash": "b4e5cbc5797479c73f5cf33b49fd4d89",
     "semantic_hash": "b4e5cbc5797479c73f5cf33b49fd4d89"
   },
   ".factory/evidence/repair-2/live/verify.json": {
-    "mtime": 1788652334.7135823,
-    "seen": 1788652335.9134643,
+    "mtime": 1788666737.6852975,
+    "seen": 1788666739.165652,
     "ast_hash": "75fc68b9ddbcd511b2e89ce1d51fd2cf",
     "semantic_hash": "75fc68b9ddbcd511b2e89ce1d51fd2cf"
   },
   ".factory/evidence/repair-2/local/lighthouse.json": {
-    "mtime": 1788652334.717582,
-    "seen": 1788652335.9134653,
+    "mtime": 1788666737.6852975,
+    "seen": 1788666739.1656535,
     "ast_hash": "920bdc981d4a4d36c5e1719f8900ba37",
     "semantic_hash": "920bdc981d4a4d36c5e1719f8900ba37"
   },
   ".factory/evidence/repair-2/local/verify.json": {
-    "mtime": 1788652334.721582,
-    "seen": 1788652335.9134665,
+    "mtime": 1788666737.6892974,
+    "seen": 1788666739.1656544,
     "ast_hash": "783cc716c0935728363097790dc3663b",
     "semantic_hash": "783cc716c0935728363097790dc3663b"
   },
   ".factory/evidence/verification-3/lighthouse-live-2.json": {
-    "mtime": 1788652334.7495809,
-    "seen": 1788652335.9134703,
+    "mtime": 1788666737.7532992,
+    "seen": 1788666739.1656735,
     "ast_hash": "6f242c2d3eeed1f6aae46958a4ec60cb",
     "semantic_hash": "6f242c2d3eeed1f6aae46958a4ec60cb"
   },
   ".factory/evidence/verification-3/lighthouse-live-3.json": {
-    "mtime": 1788652334.7495809,
-    "seen": 1788652335.9134715,
+    "mtime": 1788666737.7532992,
+    "seen": 1788666739.1656744,
     "ast_hash": "d2ebf92d8aadfbfd63c235e66708b163",
     "semantic_hash": "d2ebf92d8aadfbfd63c235e66708b163"
   },
   ".factory/evidence/verification-3/lighthouse-live.json": {
-    "mtime": 1788652334.7495809,
-    "seen": 1788652335.9134724,
+    "mtime": 1788666737.7532992,
+    "seen": 1788666739.1656759,
     "ast_hash": "de149d9eba38a4fb7c6b5b3f09855a0e",
     "semantic_hash": "de149d9eba38a4fb7c6b5b3f09855a0e"
   },
   ".factory/evidence/verification-3/verify.json": {
-    "mtime": 1788652334.7495809,
-    "seen": 1788652335.9134734,
+    "mtime": 1788666737.7572992,
+    "seen": 1788666739.1656766,
     "ast_hash": "ceb66f18c393636e8a5dc2dc16dda9e6",
     "semantic_hash": "ceb66f18c393636e8a5dc2dc16dda9e6"
+  },
+  ".factory/evidence/review-2/404.json": {
+    "mtime": 1788666737.6892974,
+    "seen": 1788666739.165656,
+    "ast_hash": "ec2a1192ad421173d71d4f0ca8a62b01",
+    "semantic_hash": "ec2a1192ad421173d71d4f0ca8a62b01"
+  },
+  ".factory/evidence/review-2/data-deletion.json": {
+    "mtime": 1788666737.713298,
+    "seen": 1788666739.1656575,
+    "ast_hash": "9e642ec352a04017756b822405e2855c",
+    "semantic_hash": "9e642ec352a04017756b822405e2855c"
+  },
+  ".factory/evidence/review-2/frame-rate.json": {
+    "mtime": 1788666737.7172983,
+    "seen": 1788666739.1656587,
+    "ast_hash": "d8ac3b7d80522e15d91192be53a6a6b1",
+    "semantic_hash": "d8ac3b7d80522e15d91192be53a6a6b1"
+  },
+  ".factory/evidence/review-2/fresh-browsers.json": {
+    "mtime": 1788666737.7172983,
+    "seen": 1788666739.1656594,
+    "ast_hash": "eea99ae8ccb1e932ef40a73b9c5a224f",
+    "semantic_hash": "eea99ae8ccb1e932ef40a73b9c5a224f"
+  },
+  ".factory/evidence/review-2/keyboard-addendum.json": {
+    "mtime": 1788666737.7172983,
+    "seen": 1788666739.1656604,
+    "ast_hash": "164ce74eaeaa3034e5d10909a0f46343",
+    "semantic_hash": "164ce74eaeaa3034e5d10909a0f46343"
+  },
+  ".factory/evidence/review-2/keyboard-and-focus.json": {
+    "mtime": 1788666737.7172983,
+    "seen": 1788666739.165661,
+    "ast_hash": "9ab269c4802834e399f270666cbe4b90",
+    "semantic_hash": "9ab269c4802834e399f270666cbe4b90"
+  },
+  ".factory/evidence/review-2/lighthouse-live-1.json": {
+    "mtime": 1788666737.7212985,
+    "seen": 1788666739.165662,
+    "ast_hash": "e29be77524a0ca2f55bff7eb63f031f3",
+    "semantic_hash": "e29be77524a0ca2f55bff7eb63f031f3"
+  },
+  ".factory/evidence/review-2/lighthouse-live-2.json": {
+    "mtime": 1788666737.7212985,
+    "seen": 1788666739.165663,
+    "ast_hash": "07d7be407d317bb55d369c68c8d979d6",
+    "semantic_hash": "07d7be407d317bb55d369c68c8d979d6"
+  },
+  ".factory/evidence/review-2/lighthouse-live-3.json": {
+    "mtime": 1788666737.7212985,
+    "seen": 1788666739.165664,
+    "ast_hash": "36aff7d427baa6fbb5a659ab2a07a4e3",
+    "semantic_hash": "36aff7d427baa6fbb5a659ab2a07a4e3"
+  },
+  ".factory/evidence/review-2/lighthouse-summary.json": {
+    "mtime": 1788666737.7212985,
+    "seen": 1788666739.1656647,
+    "ast_hash": "6df72d8ec05abdfc1a8badc2e9800488",
+    "semantic_hash": "6df72d8ec05abdfc1a8badc2e9800488"
+  },
+  ".factory/evidence/review-2/links.json": {
+    "mtime": 1788666737.7212985,
+    "seen": 1788666739.1656656,
+    "ast_hash": "4faf7ec7dd27f6a53b197275db20c7a0",
+    "semantic_hash": "4faf7ec7dd27f6a53b197275db20c7a0"
+  },
+  ".factory/evidence/review-2/real-touch.json": {
+    "mtime": 1788666737.7212985,
+    "seen": 1788666739.1656663,
+    "ast_hash": "c2ec4f1199dd2722421a40b851fea935",
+    "semantic_hash": "c2ec4f1199dd2722421a40b851fea935"
+  },
+  ".factory/evidence/review-2/recovery.json": {
+    "mtime": 1788666737.7212985,
+    "seen": 1788666739.165668,
+    "ast_hash": "28b35d5437336db8523e7a410ab5b707",
+    "semantic_hash": "28b35d5437336db8523e7a410ab5b707"
+  },
+  ".factory/evidence/review-2/url-check/verify.json": {
+    "mtime": 1788666737.7252984,
+    "seen": 1788666739.1656692,
+    "ast_hash": "794f6e62510d41b6b69e4cf83df5788a",
+    "semantic_hash": "794f6e62510d41b6b69e4cf83df5788a"
   }
 }
