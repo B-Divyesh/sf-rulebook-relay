@@ -1,0 +1,60 @@
+{
+  "base": "https://rulebook-relay.sociobot.in",
+  "observedAt": "2026-09-06T06:15:36.433Z",
+  "contexts": [
+    {
+      "profile": "desktop",
+      "home": {
+        "title": "Rulebook Relay — Daily courier puzzle",
+        "scroll": 0,
+        "h1": "Deliver three couriers before 40 moves",
+        "audience": "For daily-puzzle players who want a new logic rule instead of another word grid.",
+        "action": "Try it with sample data",
+        "boardTop": 437,
+        "viewport": {
+          "width": 1366,
+          "height": 900
+        }
+      },
+      "demo": {
+        "url": "https://rulebook-relay.sociobot.in/demo",
+        "scroll": 0,
+        "label": "Demo — sample data, nothing is saved",
+        "moves": "8 / 40 moves",
+        "boardTop": 499,
+        "resetVisible": true,
+        "startRealVisible": true,
+        "ruleFeedback": "Example complete. After Coral moves, Teal must take the next move.",
+        "movesAfterReset": "8 / 40 moves",
+        "realSentinel": "preserve"
+      }
+    },
+    {
+      "profile": "phone",
+      "home": {
+        "title": "Rulebook Relay — Daily courier puzzle",
+        "scroll": 0,
+        "h1": "Deliver three couriers before 40 moves",
+        "audience": "For daily-puzzle players who want a new logic rule instead of another word grid.",
+        "action": "Try it with sample data",
+        "boardTop": 571.015625,
+        "viewport": {
+          "width": 390,
+          "height": 664
+        }
+      },
+      "demo": {
+        "url": "https://rulebook-relay.sociobot.in/demo",
+        "scroll": 0,
+        "label": "Demo — sample data, nothing is saved",
+        "moves": "8 / 40 moves",
+        "boardTop": 586.90625,
+        "resetVisible": true,
+        "startRealVisible": true,
+        "ruleFeedback": "Example complete. After Coral moves, Teal must take the next move.",
+        "movesAfterReset": "8 / 40 moves",
+        "realSentinel": "preserve"
+      }
+    }
+  ]
+}

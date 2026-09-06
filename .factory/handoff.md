@@ -292,3 +292,31 @@ no console or structural errors. Three mobile Lighthouse runs had a performance
 median of 94 and scored 100 for accessibility, best practices, and SEO. The
 four-times-throttled phone loop measured 60 fps. All earlier findings remain
 fixed. See `.factory/review-3.md` and `.factory/evidence/review-3/`.
+
+## Strict review 4 — current status
+
+On 6 September 2026 UTC, strict review 4 checked implementation
+`1a28a7985130c2b80d3e66bace716cc2c89e3b33` against live HTTPS. The
+documentation baseline was `3aae453b2091ddbd7b139a28c9a6da99b5a234b7`.
+Later commits have reports, evidence, copy audit, and Graphify output only;
+fresh hashes of the live HTML, JS, CSS, service worker, manifest, and designed
+404 match the candidate build.
+
+The verdict is **PASS** with zero findings and zero untested claims. From a
+fresh candidate checkout, `npm ci` reported zero vulnerabilities, all 12 exact
+claim commands passed independently, `npm test` passed 9 unit and 16 browser
+tests, and `npm run build` created `dist/`. The same 16 browser checks passed
+against live HTTPS.
+
+Fresh desktop and 390 × 664 phone contexts stated the job, audience, and first
+action before scrolling, and showed the board in the first screen. The sample
+opened at 8 moves with its persistent label, reset to 8 without changing real
+data, and had a traced visible-control win. The full live suite also confirmed
+restart, the 40-move loss path, invalid input, keyboard, touch, swipe, focus,
+reduced motion, enlarged text, privacy requests, offline reload, recovery,
+legal pages, links, and designed 404.
+
+All prior findings remain fixed: service-worker cache handling, board ARIA,
+short-phone layout, enlarged-text overflow, 404 status, README claim coverage,
+rule-cycle coverage, mobile target size, and static 404 structure. See
+`.factory/review-4.md` and `.factory/evidence/review-4/`.
